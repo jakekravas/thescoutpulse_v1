@@ -1,0 +1,223 @@
+:root {
+  --main-color: #BDC3F8;
+  /* --dark-color: #29292E; */
+  --dark-color: #333;
+  --light-color: #E3E1E8;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--dark-color);
+}
+
+/* UTILITY CLASSES */
+.btn-main-color {
+  background-color: var(--main-color);
+  font-weight: bold;
+  padding: 18px 24px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.bg-dark-color {
+  background-color: var(--dark-color);
+}
+.bg-main-color {
+  background-color: var(--main-color);
+}
+.text-light-color {
+  color: var(--light-color);
+}
+.text-dark-color {
+  color: var(--dark-color);
+}
+.text-main-color {
+  color: var(--main-color);
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+/* NAV */
+#scoutpulse-nav-logo {
+  color: red;
+}
+
+#scoutpulse-nav-logo:hover {
+  /* padding: 70px !important; */
+  /* font-size: 44px !important; */
+  transition: 0.3s;
+  text-shadow: 0 0 4px #BDC3F8 !important;
+
+}
+
+
+.nav-sign-up {
+  background-color: #BDC3F8;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-item {
+  padding: 8px 20px;
+}
+
+.nav-link:hover {
+  /* text-decoration: underline; */
+}
+
+.nav-link-current {
+
+}
+
+.showcase-title {
+  font-size: 62px;
+}
+
+.nav-link-animation {
+  /* font-size: 26px; */
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link-animation::after {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.nav-link-animation:hover:after {
+  width: 100%;
+}
+
+
+/* SHOWCASE */
+#showcase-bottom {
+  /* height: 50vw;  */
+}
+
+.showcase-bottom-img {
+  width: 200px;
+}
+
+/* .anim-test {
+  font-size: 26px;
+  position: relative;
+  text-decoration: none;
+}
+
+.anim-test::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.anim-test:hover:after {
+  width: 100%;
+} */
+
+/* RANKINGS (rt = rankings table) */
+#view-amount {
+  margin: 10px 2px;
+  font-size: 18px;
+  /* font-size: 30px; */
+}
+
+.rankings-table {
+  font-size: 18px;
+}
+
+.rankings-table-header:hover {
+  cursor: pointer !important;
+}
+
+.rankings-table-data{
+  line-height: 90px;
+  /* padding: 0 40p !important; */
+}
+
+.rankings-logo {
+  width: 40px;
+}
+
+#rankings-table-position-select {
+  width: 100%;
+  background-color: #212529;
+  /* background-color: #2c3034; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #4d5154;
+  border-bottom: none;
+  margin: 0;
+  padding: 8px;
+}
+
+.rt-position-option {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 6px 0;
+
+  position: relative;
+  text-decoration: none;
+}
+
+.rt-position-option::after {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 0px;
+  transition: 0.15s;
+}
+
+.rt-position-option:hover:after, .pos-active::after {
+  width: 100%;
+}
+
+#rankings-player-search {
+  background-color: #333;
+  color: rgb(248, 249, 250);
+  border: none;
+  border-radius: 2px;
+  /* outline: none; */
+}
+
+
+/* RANKINGS V2 */
+.rankings2-table-pos-select {
+  /* background-color: #212529; */
+  background-color: rgb(33, 37, 41);
+  border: 1px solid #4d5154;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+
+.rankings2-col-headers {
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  background-color: rgb(33, 37, 41);
+  border: 1px solid #4d5154;
+  color: white;
+  /* align-items: center; */
+
+}
