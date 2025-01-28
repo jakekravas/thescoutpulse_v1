@@ -220,8 +220,8 @@ const Rankings = () => {
               <li className={`text-light rt-position-option ${positionView === 'IDL' ? 'pos-active' : ''}`} onClick={() => filterPositionView('IDL')}>IDL</li>
               <li className={`text-light rt-position-option ${positionView === 'LB' ? 'pos-active' : ''}`} onClick={() => filterPositionView('LB')}>LB</li>
               <li className={`text-light rt-position-option ${positionView === 'DB' ? 'pos-active' : ''}`} onClick={() => filterPositionView('DB')}>DB</li>
-              <li className={`text-light rt-position-option ${positionView === 'K' ? 'pos-active' : ''}`} onClick={() => filterPositionView('K')}>K</li>
-              <li className={`text-light rt-position-option ${positionView === 'P' ? 'pos-active' : ''}`} onClick={() => filterPositionView('P')}>P</li>
+              {/* <li className={`text-light rt-position-option ${positionView === 'K' ? 'pos-active' : ''}`} onClick={() => filterPositionView('K')}>K</li> */}
+              {/* <li className={`text-light rt-position-option ${positionView === 'P' ? 'pos-active' : ''}`} onClick={() => filterPositionView('P')}>P</li> */}
             </ul>
             <table className='table table-bordered table-dark table-striped rankings-table pb-5'>
               <thead>
