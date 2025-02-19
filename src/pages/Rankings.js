@@ -31,7 +31,7 @@ const Rankings = () => {
     }
 
     try {
-        const response = await fetch('/data/logos.json');
+        const response = await fetch('/data/logos_college.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }

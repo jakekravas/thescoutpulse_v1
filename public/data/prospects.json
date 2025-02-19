@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "PFF Rank": 1,
     "Name": "Travis Hunter",
     "School": "Colorado",
@@ -7,9 +8,12 @@
     "Height": "6'1",
     "Weight": "185 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 3.4,
+    "draftedBy": ""
   },
   {
+    "id": 2,
     "PFF Rank": 2,
     "Name": "Abdul Carter",
     "School": "Penn State",
@@ -17,9 +21,102 @@
     "Height": "6'3",
     "Weight": "252 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 3.8,
+    "stats": {
+      "2022*": {
+        "Team": "Penn State",
+        "Conf": "Big Ten",
+        "Class": "FR",
+        "Pos": "LB",
+        "G": 13,
+        "Solo": 36,
+        "Ast": 20,
+        "Comb": 56,
+        "TFL": 11,
+        "Sk": 6.5,
+        "Int": 0,
+        "Yds": 0,
+        "Avg": "",
+        "IntTD": 0,
+        "PD": 4,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 2,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Penn State",
+        "Conf": "Big Ten",
+        "Class": "SO",
+        "Pos": "LB",
+        "G": 13,
+        "Solo": 25,
+        "Ast": 23,
+        "Comb": 48,
+        "TFL": 6,
+        "Sk": 4.5,
+        "Int": 1,
+        "Yds": 18,
+        "Avg": 18,
+        "IntTD": 0,
+        "PD": 5,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 1,
+        "Awards": ""
+      },
+      "2024*": {
+        "Team": "Penn State",
+        "Conf": "Big Ten",
+        "Class": "SR",
+        "Pos": "LB",
+        "G": 16,
+        "Solo": 43,
+        "Ast": 25,
+        "Comb": 68,
+        "TFL": 24,
+        "Sk": 12,
+        "Int": 0,
+        "Yds": 0,
+        "Avg": "",
+        "IntTD": 0,
+        "PD": 4,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 2,
+        "Awards": "AA"
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 42,
+        "Solo": 104,
+        "Ast": 68,
+        "Comb": 172,
+        "TFL": 41,
+        "Sk": 23,
+        "Int": 1,
+        "Yds": 18,
+        "Avg": 18,
+        "IntTD": 0,
+        "PD": 13,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 5,
+        "Awards": ""
+      }
+    },
+    "draftedBy": ""
   },
   {
+    "id": 3,
     "PFF Rank": 3,
     "Name": "Tetairoa McMillan",
     "School": "Arizona",
@@ -27,9 +124,102 @@
     "Height": "6'5",
     "Weight": "212 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 6.5,
+    "stats": {
+      "2022": {
+        "Team": "Arizona",
+        "Conf": "Pac-12",
+        "Class": "FR",
+        "Pos": "WR",
+        "G": 12,
+        "Rec": 39,
+        "Yds": 702,
+        "Y/R": 18,
+        "TD": 8,
+        "Y/G": 58.5,
+        "Att": 0,
+        "Yds__1": 0,
+        "Y/A": "",
+        "TD__1": 0,
+        "Y/G__1": 0,
+        "Plays": 39,
+        "Yds__2": 702,
+        "Avg": 18,
+        "TD__2": 8,
+        "Awards": ""
+      },
+      "2024": {
+        "Team": "Arizona",
+        "Conf": "Big 12",
+        "Class": "SR",
+        "Pos": "WR",
+        "G": 12,
+        "Rec": 84,
+        "Yds": 1319,
+        "Y/R": 15.7,
+        "TD": 8,
+        "Y/G": 109.9,
+        "Att": 0,
+        "Yds__1": 0,
+        "Y/A": "",
+        "TD__1": 0,
+        "Y/G__1": 0,
+        "Plays": 84,
+        "Yds__2": 1319,
+        "Avg": 15.7,
+        "TD__2": 8,
+        "Awards": "AA"
+      },
+      "2023*": {
+        "Team": "Arizona",
+        "Conf": "Pac-12",
+        "Class": "SO",
+        "Pos": "WR",
+        "G": 13,
+        "Rec": 90,
+        "Yds": 1402,
+        "Y/R": 15.6,
+        "TD": 10,
+        "Y/G": 107.8,
+        "Att": 1,
+        "Yds__1": 3,
+        "Y/A": 3,
+        "TD__1": 0,
+        "Y/G__1": 0.2,
+        "Plays": 91,
+        "Yds__2": 1405,
+        "Avg": 15.4,
+        "TD__2": 10,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 37,
+        "Rec": 213,
+        "Yds": 3423,
+        "Y/R": 16.1,
+        "TD": 26,
+        "Y/G": 92.5,
+        "Att": 1,
+        "Yds__1": 3,
+        "Y/A": 3,
+        "TD__1": 0,
+        "Y/G__1": 0.1,
+        "Plays": 214,
+        "Yds__2": 3426,
+        "Avg": 16,
+        "TD__2": 26,
+        "Awards": ""
+      }
+    },
+    "draftedBy": ""
   },
   {
+    "id": 4,
     "PFF Rank": 4,
     "Name": "Mason Graham",
     "School": "Michigan",
@@ -37,9 +227,98 @@
     "Height": "6'3",
     "Weight": "320 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 6.6,
+    "stats": {
+  "2022*": {
+    "Team": "Michigan",
+    "Conf": "Big Ten",
+    "Class": "FR",
+    "Pos": "DL",
+    "G": 14,
+    "Solo": 14,
+    "Ast": 13,
+    "Comb": 27,
+    "TFL": 3,
+    "Sk": 2.5,
+    "Int": 0,
+    "Yds": 0,
+    "IntTD": 0,
+    "PD": 1,
+    "FR": 0,
+    "Yds__1": 0,
+    "FRTD": 0,
+    "FF": 0,
+    "Awards": ""
+  },
+  "2023*": {
+    "Team": "Michigan",
+    "Conf": "Big Ten",
+    "Class": "SO",
+    "Pos": "DL",
+    "G": 13,
+    "Solo": 23,
+    "Ast": 13,
+    "Comb": 36,
+    "TFL": 8,
+    "Sk": 3,
+    "Int": 0,
+    "Yds": 0,
+    "IntTD": 0,
+    "PD": 1,
+    "FR": 1,
+    "Yds__1": 12,
+    "FRTD": 0,
+    "FF": 1,
+    "Awards": ""
+  },
+  "2024*": {
+    "Team": "Michigan",
+    "Conf": "Big Ten",
+    "Class": "SR",
+    "Pos": "DL",
+    "G": 12,
+    "Solo": 23,
+    "Ast": 22,
+    "Comb": 45,
+    "TFL": 7,
+    "Sk": 3.5,
+    "Int": 0,
+    "Yds": 0,
+    "IntTD": 0,
+    "PD": 1,
+    "FR": 0,
+    "Yds__1": 0,
+    "FRTD": 0,
+    "FF": 0,
+    "Awards": "AA"
+  },
+  "Career": {
+    "Team": "Career",
+    "Conf": "Career",
+    "Class": "Career",
+    "Pos": "",
+    "G": 39,
+    "Solo": 60,
+    "Ast": 48,
+    "Comb": 108,
+    "TFL": 18,
+    "Sk": 9,
+    "Int": 0,
+    "Yds": 0,
+    "IntTD": 0,
+    "PD": 3,
+    "FR": 1,
+    "Yds__1": 12,
+    "FRTD": 0,
+    "FF": 1,
+    "Awards": ""
+  }
+    },
+    "draftedBy": ""
   },
   {
+    "id": 5,
     "PFF Rank": 5,
     "Name": "Ashton Jeanty",
     "School": "Boise State",
@@ -47,9 +326,102 @@
     "Height": "5'9",
     "Weight": "215 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 11.1,
+    "stats": {
+      "2024": {
+        "Team": "Boise State",
+        "Conf": "MWC",
+        "Class": "SR",
+        "Pos": "RB",
+        "G": 14,
+        "Att": 374,
+        "Yds": 2601,
+        "Y/A": 7,
+        "TD": 29,
+        "Y/G": 185.8,
+        "Rec": 23,
+        "Yds__1": 138,
+        "Y/R": 6,
+        "TD__1": 1,
+        "Y/G__1": 9.9,
+        "Plays": 397,
+        "Yds__2": 2739,
+        "Avg": 6.9,
+        "TD__2": 30,
+        "Awards": "H-2MaxwellAA"
+      },
+      "2022*": {
+        "Team": "Boise State",
+        "Conf": "MWC",
+        "Class": "FR",
+        "Pos": "RB",
+        "G": 14,
+        "Att": 156,
+        "Yds": 821,
+        "Y/A": 5.3,
+        "TD": 7,
+        "Y/G": 58.6,
+        "Rec": 14,
+        "Yds__1": 155,
+        "Y/R": 11.1,
+        "TD__1": 0,
+        "Y/G__1": 11.1,
+        "Plays": 170,
+        "Yds__2": 976,
+        "Avg": 5.7,
+        "TD__2": 7,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Boise State",
+        "Conf": "MWC",
+        "Class": "SO",
+        "Pos": "RB",
+        "G": 12,
+        "Att": 220,
+        "Yds": 1347,
+        "Y/A": 6.1,
+        "TD": 14,
+        "Y/G": 112.3,
+        "Rec": 43,
+        "Yds__1": 569,
+        "Y/R": 13.2,
+        "TD__1": 5,
+        "Y/G__1": 47.4,
+        "Plays": 263,
+        "Yds__2": 1916,
+        "Avg": 7.3,
+        "TD__2": 19,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 40,
+        "Att": 750,
+        "Yds": 4769,
+        "Y/A": 6.4,
+        "TD": 50,
+        "Y/G": 119.2,
+        "Rec": 80,
+        "Yds__1": 862,
+        "Y/R": 10.8,
+        "TD__1": 6,
+        "Y/G__1": 21.6,
+        "Plays": 830,
+        "Yds__2": 5631,
+        "Avg": 6.8,
+        "TD__2": 56,
+        "Awards": ""
+      }
+    },
+    "draftedBy": ""
   },
   {
+    "id": 6,
     "PFF Rank": 6,
     "Name": "Will Johnson",
     "School": "Michigan",
@@ -57,9 +429,102 @@
     "Height": "6'2",
     "Weight": "202 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 8.1,
+    "stats": {
+      "2022*": {
+        "Team": "Michigan",
+        "Conf": "Big Ten",
+        "Class": "FR",
+        "Pos": "DB",
+        "G": 14,
+        "Solo": 25,
+        "Ast": 2,
+        "Comb": 27,
+        "TFL": 2,
+        "Sk": 0,
+        "Int": 3,
+        "Yds": 29,
+        "Avg": 9.7,
+        "IntTD": 0,
+        "PD": 3,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Michigan",
+        "Conf": "Big Ten",
+        "Class": "SO",
+        "Pos": "DB",
+        "G": 12,
+        "Solo": 20,
+        "Ast": 7,
+        "Comb": 27,
+        "TFL": 1,
+        "Sk": 0,
+        "Int": 4,
+        "Yds": 80,
+        "Avg": 20,
+        "IntTD": 1,
+        "PD": 4,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "2024*": {
+        "Team": "Michigan",
+        "Conf": "Big Ten",
+        "Class": "SR",
+        "Pos": "DB",
+        "G": 6,
+        "Solo": 12,
+        "Ast": 2,
+        "Comb": 14,
+        "TFL": 1,
+        "Sk": 0,
+        "Int": 2,
+        "Yds": 128,
+        "Avg": 64,
+        "IntTD": 2,
+        "PD": 3,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 32,
+        "Solo": 57,
+        "Ast": 11,
+        "Comb": 68,
+        "TFL": 4,
+        "Sk": 0,
+        "Int": 9,
+        "Yds": 237,
+        "Avg": 26.3,
+        "IntTD": 3,
+        "PD": 10,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      }
+    },
+    "draftedBy": ""
   },
   {
+    "id": 7,
     "PFF Rank": 7,
     "Name": "Malaki Starks",
     "School": "Georgia",
@@ -67,9 +532,78 @@
     "Height": "6'1",
     "Weight": "205 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 14.3,
+    "stats": {
+      "2024": {
+        "Team": "Georgia",
+        "Conf": "SEC",
+        "Class": "SR",
+        "Pos": "DB",
+        "G": 14,
+        "Ret": 4,
+        "Yds": 39,
+        "Y/Ret": 9.8,
+        "PRTD": 0,
+        "Ret__1": 0,
+        "Yds__1": 0,
+        "KRTD": 0,
+        "APYd": 39,
+        "Awards": ""
+      },
+      "2022*": {
+        "Team": "Georgia",
+        "Conf": "SEC",
+        "Class": "FR",
+        "Pos": "DB",
+        "G": 15,
+        "Ret": 0,
+        "Yds": 0,
+        "Y/Ret": "",
+        "PRTD": 0,
+        "Ret__1": 0,
+        "Yds__1": 0,
+        "KRTD": 0,
+        "APYd": 42,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Georgia",
+        "Conf": "SEC",
+        "Class": "SO",
+        "Pos": "DB",
+        "G": 14,
+        "Ret": 0,
+        "Yds": 0,
+        "Y/Ret": "",
+        "PRTD": 0,
+        "Ret__1": 0,
+        "Yds__1": 0,
+        "KRTD": 0,
+        "APYd": 47,
+        "Awards": "AA"
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 43,
+        "Ret": 4,
+        "Yds": 39,
+        "Y/Ret": 9.8,
+        "PRTD": 0,
+        "Ret__1": 0,
+        "Yds__1": 0,
+        "KRTD": 0,
+        "APYd": 128,
+        "Awards": ""
+      }
+    },
+    "draftedBy": ""
   },
   {
+    "id": 8,
     "PFF Rank": 8,
     "Name": "Will Campbell",
     "School": "LSU",
@@ -77,9 +611,102 @@
     "Height": "6'6",
     "Weight": "323 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 9.8,
+    "stats": {
+      "2024": {
+        "Team": "Tennessee",
+        "Conf": "SEC",
+        "Class": "SR",
+        "Pos": "DL",
+        "G": 13,
+        "Solo": 23,
+        "Ast": 15,
+        "Comb": 38,
+        "TFL": 13,
+        "Sk": 7.5,
+        "Int": 0,
+        "Yds": 0,
+        "Avg": "",
+        "IntTD": 0,
+        "PD": 1,
+        "FR": 1,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 1,
+        "Awards": ""
+      },
+      "2022*": {
+        "Team": "Tennessee",
+        "Conf": "SEC",
+        "Class": "FR",
+        "Pos": "DL",
+        "G": 13,
+        "Solo": 3,
+        "Ast": 2,
+        "Comb": 5,
+        "TFL": 2,
+        "Sk": 2,
+        "Int": 0,
+        "Yds": 0,
+        "Avg": "",
+        "IntTD": 0,
+        "PD": 0,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Tennessee",
+        "Conf": "SEC",
+        "Class": "SO",
+        "Pos": "DL",
+        "G": 13,
+        "Solo": 18,
+        "Ast": 10,
+        "Comb": 28,
+        "TFL": 15,
+        "Sk": 10,
+        "Int": 1,
+        "Yds": 52,
+        "Avg": 52,
+        "IntTD": 1,
+        "PD": 1,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 2,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 39,
+        "Solo": 44,
+        "Ast": 27,
+        "Comb": 71,
+        "TFL": 30,
+        "Sk": 19.5,
+        "Int": 1,
+        "Yds": 52,
+        "Avg": 52,
+        "IntTD": 1,
+        "PD": 2,
+        "FR": 1,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 3,
+        "Awards": ""
+      }
+    },
+    "draftedBy": ""
   },
   {
+    "id": 9,
     "PFF Rank": 9,
     "Name": "James Pearce Jr.",
     "School": "Tennessee",
@@ -87,19 +714,205 @@
     "Height": "6'5",
     "Weight": "243 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 12.7,
+    "stats": {
+      "2024": {
+        "Team": "Tennessee",
+        "Conf": "SEC",
+        "Class": "SR",
+        "Pos": "DL",
+        "G": 13,
+        "Solo": 23,
+        "Ast": 15,
+        "Comb": 38,
+        "TFL": 13,
+        "Sk": 7.5,
+        "Int": 0,
+        "Yds": 0,
+        "Avg": "",
+        "IntTD": 0,
+        "PD": 1,
+        "FR": 1,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 1,
+        "Awards": ""
+      },
+      "2022*": {
+        "Team": "Tennessee",
+        "Conf": "SEC",
+        "Class": "FR",
+        "Pos": "DL",
+        "G": 13,
+        "Solo": 3,
+        "Ast": 2,
+        "Comb": 5,
+        "TFL": 2,
+        "Sk": 2,
+        "Int": 0,
+        "Yds": 0,
+        "Avg": "",
+        "IntTD": 0,
+        "PD": 0,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Tennessee",
+        "Conf": "SEC",
+        "Class": "SO",
+        "Pos": "DL",
+        "G": 13,
+        "Solo": 18,
+        "Ast": 10,
+        "Comb": 28,
+        "TFL": 15,
+        "Sk": 10,
+        "Int": 1,
+        "Yds": 52,
+        "Avg": 52,
+        "IntTD": 1,
+        "PD": 1,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 2,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 39,
+        "Solo": 44,
+        "Ast": 27,
+        "Comb": 71,
+        "TFL": 30,
+        "Sk": 19.5,
+        "Int": 1,
+        "Yds": 52,
+        "Avg": 52,
+        "IntTD": 1,
+        "PD": 2,
+        "FR": 1,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 3,
+        "Awards": ""
+      }
+    },
+    "draftedBy": ""
   },
   {
+    "id": 10,
     "PFF Rank": 10,
-    "Name": "Luter Burden III",
+    "Name": "Luther Burden III",
     "School": "Missouri",
     "Position": "WR",
     "Height": "5'11",
     "Weight": "208 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 15,
+    "stats": {
+      "2022*": {
+        "Team": "Missouri",
+        "Conf": "SEC",
+        "Class": "FR",
+        "Pos": "WR",
+        "G": 13,
+        "Rec": 45,
+        "Yds": 375,
+        "Y/R": 8.3,
+        "TD": 6,
+        "Y/G": 28.8,
+        "Att": 18,
+        "Yds__1": 88,
+        "Y/A": 4.9,
+        "TD__1": 2,
+        "Y/G__1": 6.8,
+        "Plays": 63,
+        "Yds__2": 463,
+        "Avg": 7.3,
+        "TD__2": 8,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Missouri",
+        "Conf": "SEC",
+        "Class": "SO",
+        "Pos": "WR",
+        "G": 13,
+        "Rec": 86,
+        "Yds": 1212,
+        "Y/R": 14.1,
+        "TD": 9,
+        "Y/G": 93.2,
+        "Att": 7,
+        "Yds__1": 31,
+        "Y/A": 4.4,
+        "TD__1": 0,
+        "Y/G__1": 2.4,
+        "Plays": 93,
+        "Yds__2": 1243,
+        "Avg": 13.4,
+        "TD__2": 9,
+        "Awards": ""
+      },
+      "2024*": {
+        "Team": "Missouri",
+        "Conf": "SEC",
+        "Class": "SR",
+        "Pos": "WR",
+        "G": 12,
+        "Rec": 61,
+        "Yds": 676,
+        "Y/R": 11.1,
+        "TD": 6,
+        "Y/G": 56.3,
+        "Att": 9,
+        "Yds__1": 115,
+        "Y/A": 12.8,
+        "TD__1": 2,
+        "Y/G__1": 9.6,
+        "Plays": 70,
+        "Yds__2": 791,
+        "Avg": 11.3,
+        "TD__2": 8,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 38,
+        "Rec": 192,
+        "Yds": 2263,
+        "Y/R": 11.8,
+        "TD": 21,
+        "Y/G": 59.6,
+        "Att": 34,
+        "Yds__1": 234,
+        "Y/A": 6.9,
+        "TD__1": 4,
+        "Y/G__1": 6.2,
+        "Plays": 226,
+        "Yds__2": 2497,
+        "Avg": 11,
+        "TD__2": 25,
+        "Awards": ""
+      }
+    },
+    "draftedBy": ""
   },
   {
+    "id": 11,
     "PFF Rank": 11,
     "Name": "Mike Green",
     "School": "Marshall",
@@ -107,9 +920,160 @@
     "Height": "6'4",
     "Weight": "248 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 14.5,
+    "stats": {
+      "2021": {
+        "Team": "Virginia",
+        "Conf": "ACC",
+        "Class": "FR",
+        "Pos": "LB",
+        "G": 6,
+        "Solo": 2,
+        "Ast": 2,
+        "Comb": 4,
+        "TFL": 1,
+        "Sk": 1,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 0,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "2024": {
+        "Team": "Marshall",
+        "Conf": "Sun Belt",
+        "Class": "JR",
+        "Pos": "DL",
+        "G": 13,
+        "Solo": 38,
+        "Ast": 46,
+        "Comb": 84,
+        "TFL": 23,
+        "Sk": 17,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 2,
+        "FR": 1,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 3,
+        "Awards": ""
+      },
+      "": {
+        "Team": "",
+        "Conf": "",
+        "Class": "",
+        "Pos": "",
+        "G": "",
+        "Solo": "",
+        "Ast": "",
+        "Comb": "",
+        "TFL": "",
+        "Sk": "",
+        "Int": "",
+        "Yds": "",
+        "IntTD": "",
+        "PD": "",
+        "FR": "",
+        "Yds__1": "",
+        "FRTD": "",
+        "FF": "",
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Marshall",
+        "Conf": "Sun Belt",
+        "Class": "FR",
+        "Pos": "DL",
+        "G": 13,
+        "Solo": 22,
+        "Ast": 21,
+        "Comb": 43,
+        "TFL": 9,
+        "Sk": 4.5,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 0,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 1,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 32,
+        "Solo": 62,
+        "Ast": 69,
+        "Comb": 131,
+        "TFL": 33,
+        "Sk": 22.5,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 2,
+        "FR": 1,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 4,
+        "Awards": ""
+      },
+      "Marshall (2 Yrs)": {
+        "Team": "Marshall (2 Yrs)",
+        "Conf": "Marshall (2 Yrs)",
+        "Class": "Marshall (2 Yrs)",
+        "Pos": "",
+        "G": 26,
+        "Solo": 60,
+        "Ast": 67,
+        "Comb": 127,
+        "TFL": 32,
+        "Sk": 21.5,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 2,
+        "FR": 1,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 4,
+        "Awards": ""
+      },
+      "Virginia (1 Yr)": {
+        "Team": "Virginia (1 Yr)",
+        "Conf": "Virginia (1 Yr)",
+        "Class": "Virginia (1 Yr)",
+        "Pos": "",
+        "G": 6,
+        "Solo": 2,
+        "Ast": 2,
+        "Comb": 4,
+        "TFL": 1,
+        "Sk": 1,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 0,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      }
+    }
   },
   {
+    "id": 12,
     "PFF Rank": 12,
     "Name": "Josh Simmon",
     "School": "Ohio State",
@@ -117,9 +1081,11 @@
     "Height": "6'5",
     "Weight": "310 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 15.2
   },
   {
+    "id": 13,
     "PFF Rank": 13,
     "Name": "Tyler Warren",
     "School": "Penn State",
@@ -127,9 +1093,145 @@
     "Height": "6'6",
     "Weight": "261 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 15.4,
+    "stats": {
+      "2020": {
+        "Team": "Penn State",
+        "Conf": "Big Ten",
+        "Class": "FR",
+        "Pos": "TE",
+        "G": 2,
+        "Rec": 0,
+        "Yds": 0,
+        "Y/R": "",
+        "TD": 0,
+        "Y/G": 0,
+        "Att": 0,
+        "Yds__1": 0,
+        "Y/A": "",
+        "TD__1": 0,
+        "Y/G__1": 0,
+        "Plays": 0,
+        "Yds__2": 0,
+        "Avg": "",
+        "TD__2": 0,
+        "Awards": ""
+      },
+      "2021*": {
+        "Team": "Penn State",
+        "Conf": "Big Ten",
+        "Class": "FR",
+        "Pos": "TE",
+        "G": 13,
+        "Rec": 5,
+        "Yds": 61,
+        "Y/R": 12.2,
+        "TD": 1,
+        "Y/G": 4.7,
+        "Att": 6,
+        "Yds__1": 6,
+        "Y/A": 1,
+        "TD__1": 2,
+        "Y/G__1": 0.5,
+        "Plays": 11,
+        "Yds__2": 67,
+        "Avg": 6.1,
+        "TD__2": 3,
+        "Awards": ""
+      },
+      "2022*": {
+        "Team": "Penn State",
+        "Conf": "Big Ten",
+        "Class": "SO",
+        "Pos": "TE",
+        "G": 12,
+        "Rec": 10,
+        "Yds": 123,
+        "Y/R": 12.3,
+        "TD": 3,
+        "Y/G": 10.3,
+        "Att": 0,
+        "Yds__1": 0,
+        "Y/A": "",
+        "TD__1": 0,
+        "Y/G__1": 0,
+        "Plays": 10,
+        "Yds__2": 123,
+        "Avg": 12.3,
+        "TD__2": 3,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Penn State",
+        "Conf": "Big Ten",
+        "Class": "JR",
+        "Pos": "TE",
+        "G": 13,
+        "Rec": 34,
+        "Yds": 422,
+        "Y/R": 12.4,
+        "TD": 7,
+        "Y/G": 32.5,
+        "Att": 0,
+        "Yds__1": 0,
+        "Y/A": "",
+        "TD__1": 0,
+        "Y/G__1": 0,
+        "Plays": 34,
+        "Yds__2": 422,
+        "Avg": 12.4,
+        "TD__2": 7,
+        "Awards": ""
+      },
+      "2024*": {
+        "Team": "Penn State",
+        "Conf": "Big Ten",
+        "Class": "SR",
+        "Pos": "TE",
+        "G": 16,
+        "Rec": 104,
+        "Yds": 1233,
+        "Y/R": 11.9,
+        "TD": 8,
+        "Y/G": 77.1,
+        "Att": 26,
+        "Yds__1": 218,
+        "Y/A": 8.4,
+        "TD__1": 4,
+        "Y/G__1": 13.6,
+        "Plays": 130,
+        "Yds__2": 1451,
+        "Avg": 11.2,
+        "TD__2": 12,
+        "Awards": "H-7"
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 56,
+        "Rec": 153,
+        "Yds": 1839,
+        "Y/R": 12,
+        "TD": 19,
+        "Y/G": 32.8,
+        "Att": 32,
+        "Yds__1": 224,
+        "Y/A": 7,
+        "TD__1": 6,
+        "Y/G__1": 4,
+        "Plays": 185,
+        "Yds__2": 2063,
+        "Avg": 11.2,
+        "TD__2": 25,
+        "Awards": ""
+      }
+    }
   },
   {
+    "id": 14,
     "PFF Rank": 14,
     "Name": "Emeka Egbuka",
     "School": "Ohio State",
@@ -137,9 +1239,123 @@
     "Height": "6'1",
     "Weight": "205 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 19.2,
+    "stats": {
+      "2021*": {
+        "Team": "Ohio State",
+        "Conf": "Big Ten",
+        "Class": "FR",
+        "Pos": "WR",
+        "G": 10,
+        "Rec": 9,
+        "Yds": 191,
+        "Y/R": 21.2,
+        "TD": 0,
+        "Y/G": 19.1,
+        "Att": 0,
+        "Yds__1": 0,
+        "Y/A": "",
+        "TD__1": 0,
+        "Y/G__1": 0,
+        "Plays": 9,
+        "Yds__2": 191,
+        "Avg": 21.2,
+        "TD__2": 0,
+        "Awards": ""
+      },
+      "2022*": {
+        "Team": "Ohio State",
+        "Conf": "Big Ten",
+        "Class": "SO",
+        "Pos": "WR",
+        "G": 13,
+        "Rec": 74,
+        "Yds": 1151,
+        "Y/R": 15.6,
+        "TD": 10,
+        "Y/G": 88.5,
+        "Att": 11,
+        "Yds__1": 87,
+        "Y/A": 7.9,
+        "TD__1": 2,
+        "Y/G__1": 6.7,
+        "Plays": 85,
+        "Yds__2": 1238,
+        "Avg": 14.6,
+        "TD__2": 12,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Ohio State",
+        "Conf": "Big Ten",
+        "Class": "JR",
+        "Pos": "WR",
+        "G": 10,
+        "Rec": 41,
+        "Yds": 515,
+        "Y/R": 12.6,
+        "TD": 4,
+        "Y/G": 51.5,
+        "Att": 5,
+        "Yds__1": 25,
+        "Y/A": 5,
+        "TD__1": 0,
+        "Y/G__1": 2.5,
+        "Plays": 46,
+        "Yds__2": 540,
+        "Avg": 11.7,
+        "TD__2": 4,
+        "Awards": ""
+      },
+      "2024*": {
+        "Team": "Ohio State",
+        "Conf": "Big Ten",
+        "Class": "SR",
+        "Pos": "WR",
+        "G": 16,
+        "Rec": 81,
+        "Yds": 1011,
+        "Y/R": 12.5,
+        "TD": 10,
+        "Y/G": 63.2,
+        "Att": 8,
+        "Yds__1": 33,
+        "Y/A": 4.1,
+        "TD__1": 0,
+        "Y/G__1": 2.1,
+        "Plays": 89,
+        "Yds__2": 1044,
+        "Avg": 11.7,
+        "TD__2": 10,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 49,
+        "Rec": 205,
+        "Yds": 2868,
+        "Y/R": 14,
+        "TD": 24,
+        "Y/G": 58.5,
+        "Att": 24,
+        "Yds__1": 145,
+        "Y/A": 6,
+        "TD__1": 2,
+        "Y/G__1": 3,
+        "Plays": 229,
+        "Yds__2": 3013,
+        "Avg": 13.2,
+        "TD__2": 26,
+        "Awards": ""
+      }
+    }
   },
   {
+    "id": 15,
     "PFF Rank": 15,
     "Name": "Kelvin Banks Jr.",
     "School": "Texas",
@@ -147,9 +1363,11 @@
     "Height": "6'4",
     "Weight": "320 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 15.9
   },
   {
+    "id": 16,
     "PFF Rank": 16,
     "Name": "Benjamin Morrison",
     "School": "Notre Dame",
@@ -157,9 +1375,101 @@
     "Height": "6'0",
     "Weight": "190 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 21.8,
+    "stats": {
+      "2022*": {
+        "Team": "Notre Dame",
+        "Conf": "Ind",
+        "Class": "FR",
+        "Pos": "CB",
+        "G": 13,
+        "Solo": 22,
+        "Ast": 11,
+        "Comb": 33,
+        "TFL": 1,
+        "Sk": 0,
+        "Int": 6,
+        "Yds": 97,
+        "Avg": 16.2,
+        "IntTD": 1,
+        "PD": 4,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Notre Dame",
+        "Conf": "Ind",
+        "Class": "SO",
+        "Pos": "CB",
+        "G": 12,
+        "Solo": 25,
+        "Ast": 6,
+        "Comb": 31,
+        "TFL": 4,
+        "Sk": 0,
+        "Int": 3,
+        "Yds": 14,
+        "Avg": 4.7,
+        "IntTD": 0,
+        "PD": 10,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "2024*": {
+        "Team": "Notre Dame",
+        "Conf": "Ind",
+        "Class": "SR",
+        "Pos": "CB",
+        "G": 6,
+        "Solo": 14,
+        "Ast": 6,
+        "Comb": 20,
+        "TFL": 0,
+        "Sk": 0,
+        "Int": 0,
+        "Yds": 0,
+        "Avg": "",
+        "IntTD": 0,
+        "PD": 4,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 31,
+        "Solo": 61,
+        "Ast": 23,
+        "Comb": 84,
+        "TFL": 5,
+        "Sk": 0,
+        "Int": 9,
+        "Yds": 111,
+        "Avg": 12.3,
+        "IntTD": 1,
+        "PD": 18,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      }
+    }
   },
   {
+    "id": 17,
     "PFF Rank": 17,
     "Name": "Cam Ward",
     "School": "Miami",
@@ -167,9 +1477,160 @@
     "Height": "6'2",
     "Weight": "223 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 2.4,
+    "stats": {
+      "2023": {
+        "Team": "Washington State",
+        "Conf": "Pac-12",
+        "Class": "JR",
+        "Pos": "QB",
+        "G": 12,
+        "Cmp": 323,
+        "Att": 485,
+        "Cmp%": 66.6,
+        "Yds": 3736,
+        "TD": 25,
+        "TD%": 5.2,
+        "Int": 7,
+        "Int%": 1.4,
+        "Y/A": 7.7,
+        "AY/A": 8.08,
+        "Y/C": 11.6,
+        "Y/G": 311.3,
+        "Rate": 145.4,
+        "Awards": ""
+      },
+      "2022*": {
+        "Team": "Washington State",
+        "Conf": "Pac-12",
+        "Class": "SO",
+        "Pos": "QB",
+        "G": 13,
+        "Cmp": 320,
+        "Att": 497,
+        "Cmp%": 64.4,
+        "Yds": 3232,
+        "TD": 23,
+        "TD%": 4.6,
+        "Int": 9,
+        "Int%": 1.8,
+        "Y/A": 6.5,
+        "AY/A": 6.61,
+        "Y/C": 10.1,
+        "Y/G": 248.6,
+        "Rate": 130.7,
+        "Awards": ""
+      },
+      "2024*": {
+        "Team": "Miami (FL)",
+        "Conf": "ACC",
+        "Class": "SR",
+        "Pos": "QB",
+        "G": 13,
+        "Cmp": 305,
+        "Att": 454,
+        "Cmp%": 67.2,
+        "Yds": 4313,
+        "TD": 39,
+        "TD%": 8.6,
+        "Int": 7,
+        "Int%": 1.5,
+        "Y/A": 9.5,
+        "AY/A": 10.52,
+        "Y/C": 14.1,
+        "Y/G": 331.8,
+        "Rate": 172.2,
+        "Awards": "H-4AA"
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 38,
+        "Cmp": 948,
+        "Att": 1436,
+        "Cmp%": 66,
+        "Yds": 11281,
+        "TD": 87,
+        "TD%": 6.1,
+        "Int": 23,
+        "Int%": 1.6,
+        "Y/A": 7.9,
+        "AY/A": 8.35,
+        "Y/C": 11.9,
+        "Y/G": 296.9,
+        "Rate": 148.8,
+        "Awards": ""
+      },
+      "": {
+        "Team": "",
+        "Conf": "",
+        "Class": "",
+        "Pos": "",
+        "G": "",
+        "Cmp": "",
+        "Att": "",
+        "Cmp%": "",
+        "Yds": "",
+        "TD": "",
+        "TD%": "",
+        "Int": "",
+        "Int%": "",
+        "Y/A": "",
+        "AY/A": "",
+        "Y/C": "",
+        "Y/G": "",
+        "Rate": "",
+        "Awards": ""
+      },
+      "Miami (FL) (1 Yr)": {
+        "Team": "Miami (FL) (1 Yr)",
+        "Conf": "Miami (FL) (1 Yr)",
+        "Class": "Miami (FL) (1 Yr)",
+        "Pos": "",
+        "G": 13,
+        "Cmp": 305,
+        "Att": 454,
+        "Cmp%": 67.2,
+        "Yds": 4313,
+        "TD": 39,
+        "TD%": 8.6,
+        "Int": 7,
+        "Int%": 1.5,
+        "Y/A": 9.5,
+        "AY/A": 10.52,
+        "Y/C": 14.1,
+        "Y/G": 331.8,
+        "Rate": 172.2,
+        "Awards": ""
+      },
+      "Washington State (2 Yrs)": {
+        "Team": "Washington State (2 Yrs)",
+        "Conf": "Washington State (2 Yrs)",
+        "Class": "Washington State (2 Yrs)",
+        "Pos": "",
+        "G": 25,
+        "Cmp": 643,
+        "Att": 982,
+        "Cmp%": 65.5,
+        "Yds": 6968,
+        "TD": 48,
+        "TD%": 4.9,
+        "Int": 16,
+        "Int%": 1.6,
+        "Y/A": 7.1,
+        "AY/A": 7.34,
+        "Y/C": 10.8,
+        "Y/G": 278.7,
+        "Rate": 138,
+        "Awards": ""
+      }
+    }
   },
   {
+    "id": 18,
     "PFF Rank": 18,
     "Name": "Mykel Williams",
     "School": "Georgia",
@@ -177,9 +1638,97 @@
     "Height": "6'5",
     "Weight": "265 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 17.9,
+    "stats": {
+      "2024": {
+        "Team": "Georgia",
+        "Conf": "SEC",
+        "Class": "SR",
+        "Pos": "DL",
+        "G": 12,
+        "Solo": 15,
+        "Ast": 6,
+        "Comb": 21,
+        "TFL": 9,
+        "Sk": 5,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 2,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 2,
+        "Awards": ""
+      },
+      "2022*": {
+        "Team": "Georgia",
+        "Conf": "SEC",
+        "Class": "FR",
+        "Pos": "DL",
+        "G": 15,
+        "Solo": 15,
+        "Ast": 13,
+        "Comb": 28,
+        "TFL": 7,
+        "Sk": 4.5,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 0,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Georgia",
+        "Conf": "SEC",
+        "Class": "SO",
+        "Pos": "DL",
+        "G": 13,
+        "Solo": 11,
+        "Ast": 7,
+        "Comb": 18,
+        "TFL": 7,
+        "Sk": 4.5,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 2,
+        "FR": 1,
+        "Yds__1": 10,
+        "FRTD": 0,
+        "FF": 1,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 40,
+        "Solo": 41,
+        "Ast": 26,
+        "Comb": 67,
+        "TFL": 23,
+        "Sk": 14,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 4,
+        "FR": 1,
+        "Yds__1": 10,
+        "FRTD": 0,
+        "FF": 3,
+        "Awards": ""
+      }
+    }
   },
   {
+    "id": 19,
     "PFF Rank": 19,
     "Name": "Kenneth Grant",
     "School": "Michigan",
@@ -187,9 +1736,101 @@
     "Height": "6'3",
     "Weight": "339 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 25.1,
+    "stats": {
+      "2022*": {
+        "Team": "Michigan",
+        "Conf": "Big Ten",
+        "Class": "FR",
+        "Pos": "DL",
+        "G": 14,
+        "Solo": 2,
+        "Ast": 6,
+        "Comb": 8,
+        "TFL": 0,
+        "Sk": 0,
+        "Int": 0,
+        "Yds": 0,
+        "Avg": "",
+        "IntTD": 0,
+        "PD": 0,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Michigan",
+        "Conf": "Big Ten",
+        "Class": "SO",
+        "Pos": "DL",
+        "G": 15,
+        "Solo": 16,
+        "Ast": 13,
+        "Comb": 29,
+        "TFL": 5,
+        "Sk": 3.5,
+        "Int": 1,
+        "Yds": -3,
+        "Avg": -3,
+        "IntTD": 0,
+        "PD": 5,
+        "FR": 1,
+        "Yds__1": 2,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "2024*": {
+        "Team": "Michigan",
+        "Conf": "Big Ten",
+        "Class": "SR",
+        "Pos": "DL",
+        "G": 12,
+        "Solo": 18,
+        "Ast": 14,
+        "Comb": 32,
+        "TFL": 7,
+        "Sk": 3,
+        "Int": 0,
+        "Yds": 0,
+        "Avg": "",
+        "IntTD": 0,
+        "PD": 5,
+        "FR": 2,
+        "Yds__1": 18,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 41,
+        "Solo": 36,
+        "Ast": 33,
+        "Comb": 69,
+        "TFL": 12,
+        "Sk": 6.5,
+        "Int": 1,
+        "Yds": -3,
+        "Avg": -3,
+        "IntTD": 0,
+        "PD": 10,
+        "FR": 3,
+        "Yds__1": 20,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      }
+    }
   },
   {
+    "id": 20,
     "PFF Rank": 20,
     "Name": "Shemar Stewart",
     "School": "Texas A&M",
@@ -197,9 +1838,97 @@
     "Height": "6'6",
     "Weight": "290 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 21.5,
+    "stats": {
+      "2022": {
+        "Team": "Texas A&M",
+        "Conf": "SEC",
+        "Class": "FR",
+        "Pos": "DL",
+        "G": 12,
+        "Solo": 11,
+        "Ast": 12,
+        "Comb": 23,
+        "TFL": 4,
+        "Sk": 1.5,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 0,
+        "FR": 1,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Texas A&M",
+        "Conf": "SEC",
+        "Class": "SO",
+        "Pos": "DL",
+        "G": 13,
+        "Solo": 5,
+        "Ast": 6,
+        "Comb": 11,
+        "TFL": 2,
+        "Sk": 1.5,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 2,
+        "FR": 1,
+        "Yds__1": 43,
+        "FRTD": 1,
+        "FF": 0,
+        "Awards": ""
+      },
+      "2024*": {
+        "Team": "Texas A&M",
+        "Conf": "SEC",
+        "Class": "SR",
+        "Pos": "DL",
+        "G": 12,
+        "Solo": 14,
+        "Ast": 17,
+        "Comb": 31,
+        "TFL": 6,
+        "Sk": 1.5,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 2,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 1,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 37,
+        "Solo": 30,
+        "Ast": 35,
+        "Comb": 65,
+        "TFL": 12,
+        "Sk": 4.5,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 4,
+        "FR": 2,
+        "Yds__1": 43,
+        "FRTD": 1,
+        "FF": 1,
+        "Awards": ""
+      }
+    }
   },
   {
+    "id": 21,
     "PFF Rank": 21,
     "Name": "Armand Membou",
     "School": "Missouri",
@@ -207,9 +1936,11 @@
     "Height": "6'3",
     "Weight": "314 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 23.1
   },
   {
+    "id": 22,
     "PFF Rank": 22,
     "Name": "Jack Sawyer",
     "School": "Ohio State",
@@ -217,9 +1948,123 @@
     "Height": "6'5",
     "Weight": "260 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 25.5,
+    "stats": {
+      "2021*": {
+        "Team": "Ohio State",
+        "Conf": "Big Ten",
+        "Class": "FR",
+        "Pos": "DE",
+        "G": 12,
+        "Solo": 9,
+        "Ast": 4,
+        "Comb": 13,
+        "TFL": 3,
+        "Sk": 3,
+        "Int": 0,
+        "Yds": 0,
+        "Avg": "",
+        "IntTD": 0,
+        "PD": 1,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 1,
+        "Awards": ""
+      },
+      "2022*": {
+        "Team": "Ohio State",
+        "Conf": "Big Ten",
+        "Class": "SO",
+        "Pos": "DE",
+        "G": 13,
+        "Solo": 10,
+        "Ast": 14,
+        "Comb": 24,
+        "TFL": 7,
+        "Sk": 4.5,
+        "Int": 0,
+        "Yds": 0,
+        "Avg": "",
+        "IntTD": 0,
+        "PD": 1,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 0,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "Ohio State",
+        "Conf": "Big Ten",
+        "Class": "JR",
+        "Pos": "DE",
+        "G": 13,
+        "Solo": 24,
+        "Ast": 24,
+        "Comb": 48,
+        "TFL": 10,
+        "Sk": 6.5,
+        "Int": 0,
+        "Yds": 0,
+        "Avg": "",
+        "IntTD": 0,
+        "PD": 2,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 2,
+        "Awards": ""
+      },
+      "2024*": {
+        "Team": "Ohio State",
+        "Conf": "Big Ten",
+        "Class": "SR",
+        "Pos": "DE",
+        "G": 16,
+        "Solo": 25,
+        "Ast": 34,
+        "Comb": 59,
+        "TFL": 9,
+        "Sk": 9,
+        "Int": 1,
+        "Yds": 12,
+        "Avg": 12,
+        "IntTD": 0,
+        "PD": 7,
+        "FR": 3,
+        "Yds__1": 94,
+        "FRTD": 2,
+        "FF": 3,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 54,
+        "Solo": 68,
+        "Ast": 76,
+        "Comb": 144,
+        "TFL": 29,
+        "Sk": 23,
+        "Int": 1,
+        "Yds": 12,
+        "Avg": 12,
+        "IntTD": 0,
+        "PD": 11,
+        "FR": 3,
+        "Yds__1": 94,
+        "FRTD": 2,
+        "FF": 6,
+        "Awards": ""
+      }
+    }
   },
   {
+    "id": 23,
     "PFF Rank": 23,
     "Name": "Matthew Golden",
     "School": "Texas",
@@ -227,9 +2072,160 @@
     "Height": "6'0",
     "Weight": "195 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 24.8,
+    "stats": {
+      "2023": {
+        "Team": "Houston",
+        "Conf": "Big 12",
+        "Class": "SO",
+        "Pos": "WR",
+        "G": 9,
+        "Rec": 38,
+        "Yds": 404,
+        "Y/R": 10.6,
+        "TD": 6,
+        "Y/G": 44.9,
+        "Att": 0,
+        "Yds__1": 0,
+        "TD__1": 0,
+        "Y/G__1": 0,
+        "Plays": 38,
+        "Yds__2": 404,
+        "Avg": 10.6,
+        "TD__2": 6,
+        "Awards": ""
+      },
+      "2022*": {
+        "Team": "Houston",
+        "Conf": "American",
+        "Class": "FR",
+        "Pos": "WR",
+        "G": 11,
+        "Rec": 38,
+        "Yds": 584,
+        "Y/R": 15.4,
+        "TD": 7,
+        "Y/G": 53.1,
+        "Att": 0,
+        "Yds__1": 0,
+        "TD__1": 0,
+        "Y/G__1": 0,
+        "Plays": 38,
+        "Yds__2": 584,
+        "Avg": 15.4,
+        "TD__2": 7,
+        "Awards": ""
+      },
+      "2024*": {
+        "Team": "Texas",
+        "Conf": "SEC",
+        "Class": "SR",
+        "Pos": "WR",
+        "G": 16,
+        "Rec": 58,
+        "Yds": 987,
+        "Y/R": 17,
+        "TD": 9,
+        "Y/G": 61.7,
+        "Att": 0,
+        "Yds__1": 0,
+        "TD__1": 0,
+        "Y/G__1": 0,
+        "Plays": 58,
+        "Yds__2": 987,
+        "Avg": 17,
+        "TD__2": 9,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 36,
+        "Rec": 134,
+        "Yds": 1975,
+        "Y/R": 14.7,
+        "TD": 22,
+        "Y/G": 54.9,
+        "Att": 0,
+        "Yds__1": 0,
+        "TD__1": 0,
+        "Y/G__1": 0,
+        "Plays": 134,
+        "Yds__2": 1975,
+        "Avg": 14.7,
+        "TD__2": 22,
+        "Awards": ""
+      },
+      "": {
+        "Team": "",
+        "Conf": "",
+        "Class": "",
+        "Pos": "",
+        "G": "",
+        "Rec": "",
+        "Yds": "",
+        "Y/R": "",
+        "TD": "",
+        "Y/G": "",
+        "Att": "",
+        "Yds__1": "",
+        "TD__1": "",
+        "Y/G__1": "",
+        "Plays": "",
+        "Yds__2": "",
+        "Avg": "",
+        "TD__2": "",
+        "Awards": ""
+      },
+      "Houston (2 Yrs)": {
+        "Team": "Houston (2 Yrs)",
+        "Conf": "Houston (2 Yrs)",
+        "Class": "Houston (2 Yrs)",
+        "Pos": "",
+        "G": 20,
+        "Rec": 76,
+        "Yds": 988,
+        "Y/R": 13,
+        "TD": 13,
+        "Y/G": 49.4,
+        "Att": 0,
+        "Yds__1": 0,
+        "TD__1": 0,
+        "Y/G__1": 0,
+        "Plays": 76,
+        "Yds__2": 988,
+        "Avg": 13,
+        "TD__2": 13,
+        "Awards": ""
+      },
+      "Texas (1 Yr)": {
+        "Team": "Texas (1 Yr)",
+        "Conf": "Texas (1 Yr)",
+        "Class": "Texas (1 Yr)",
+        "Pos": "",
+        "G": 16,
+        "Rec": 58,
+        "Yds": 987,
+        "Y/R": 17,
+        "TD": 9,
+        "Y/G": 61.7,
+        "Att": 0,
+        "Yds__1": 0,
+        "TD__1": 0,
+        "Y/G__1": 0,
+        "Plays": 58,
+        "Yds__2": 987,
+        "Avg": 17,
+        "TD__2": 9,
+        "Awards": ""
+      }
+    }
   },
   {
+    "id": 24,
     "PFF Rank": 24,
     "Name": "Omarion Hampton",
     "School": "North Carolina",
@@ -237,9 +2233,101 @@
     "Height": "6'1",
     "Weight": "220 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 30.4,
+    "stats": {
+      "2022*": {
+        "Team": "North Carolina",
+        "Conf": "ACC",
+        "Class": "FR",
+        "Pos": "RB",
+        "G": 13,
+        "Att": 88,
+        "Yds": 401,
+        "Y/A": 4.6,
+        "TD": 6,
+        "Y/G": 30.8,
+        "Rec": 6,
+        "Yds__1": 40,
+        "Y/R": 6.7,
+        "TD__1": 1,
+        "Y/G__1": 3.1,
+        "Plays": 94,
+        "Yds__2": 441,
+        "Avg": 4.7,
+        "TD__2": 7,
+        "Awards": ""
+      },
+      "2023*": {
+        "Team": "North Carolina",
+        "Conf": "ACC",
+        "Class": "SO",
+        "Pos": "RB",
+        "G": 13,
+        "Att": 253,
+        "Yds": 1504,
+        "Y/A": 5.9,
+        "TD": 15,
+        "Y/G": 115.7,
+        "Rec": 29,
+        "Yds__1": 222,
+        "Y/R": 7.7,
+        "TD__1": 1,
+        "Y/G__1": 17.1,
+        "Plays": 282,
+        "Yds__2": 1726,
+        "Avg": 6.1,
+        "TD__2": 16,
+        "Awards": ""
+      },
+      "2024*": {
+        "Team": "North Carolina",
+        "Conf": "ACC",
+        "Class": "SR",
+        "Pos": "RB",
+        "G": 12,
+        "Att": 281,
+        "Yds": 1660,
+        "Y/A": 5.9,
+        "TD": 15,
+        "Y/G": 138.3,
+        "Rec": 38,
+        "Yds__1": 373,
+        "Y/R": 9.8,
+        "TD__1": 2,
+        "Y/G__1": 31.1,
+        "Plays": 319,
+        "Yds__2": 2033,
+        "Avg": 6.4,
+        "TD__2": 17,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 38,
+        "Att": 622,
+        "Yds": 3565,
+        "Y/A": 5.7,
+        "TD": 36,
+        "Y/G": 93.8,
+        "Rec": 73,
+        "Yds__1": 635,
+        "Y/R": 8.7,
+        "TD__1": 4,
+        "Y/G__1": 16.7,
+        "Plays": 695,
+        "Yds__2": 4200,
+        "Avg": 6,
+        "TD__2": 40,
+        "Awards": ""
+      }
+    }
   },
   {
+    "id": 25,
     "PFF Rank": 25,
     "Name": "Nic Scourton",
     "School": "Texas A&M",
@@ -247,9 +2335,160 @@
     "Height": "6'4",
     "Weight": "285 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 29.1,
+    "stats": {
+      "2023": {
+        "Team": "Purdue",
+        "Conf": "Big Ten",
+        "Class": "SO",
+        "Pos": "LB",
+        "G": 11,
+        "Solo": 33,
+        "Ast": 17,
+        "Comb": 50,
+        "TFL": 15,
+        "Sk": 10,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 3,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 1,
+        "Awards": ""
+      },
+      "2022*": {
+        "Team": "Purdue",
+        "Conf": "Big Ten",
+        "Class": "FR",
+        "Pos": "DE",
+        "G": 14,
+        "Solo": 15,
+        "Ast": 7,
+        "Comb": 22,
+        "TFL": 2,
+        "Sk": 2,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 0,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 1,
+        "Awards": ""
+      },
+      "2024*": {
+        "Team": "Texas A&M",
+        "Conf": "SEC",
+        "Class": "SR",
+        "Pos": "DL",
+        "G": 12,
+        "Solo": 27,
+        "Ast": 10,
+        "Comb": 37,
+        "TFL": 14,
+        "Sk": 5,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 2,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 1,
+        "Awards": ""
+      },
+      "Career": {
+        "Team": "Career",
+        "Conf": "Career",
+        "Class": "Career",
+        "Pos": "",
+        "G": 37,
+        "Solo": 75,
+        "Ast": 34,
+        "Comb": 109,
+        "TFL": 31,
+        "Sk": 17,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 5,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 3,
+        "Awards": ""
+      },
+      "": {
+        "Team": "",
+        "Conf": "",
+        "Class": "",
+        "Pos": "",
+        "G": "",
+        "Solo": "",
+        "Ast": "",
+        "Comb": "",
+        "TFL": "",
+        "Sk": "",
+        "Int": "",
+        "Yds": "",
+        "IntTD": "",
+        "PD": "",
+        "FR": "",
+        "Yds__1": "",
+        "FRTD": "",
+        "FF": "",
+        "Awards": ""
+      },
+      "Purdue (2 Yrs)": {
+        "Team": "Purdue (2 Yrs)",
+        "Conf": "Purdue (2 Yrs)",
+        "Class": "Purdue (2 Yrs)",
+        "Pos": "",
+        "G": 25,
+        "Solo": 48,
+        "Ast": 24,
+        "Comb": 72,
+        "TFL": 17,
+        "Sk": 12,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 3,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 2,
+        "Awards": ""
+      },
+      "Texas A&M (1 Yr)": {
+        "Team": "Texas A&M (1 Yr)",
+        "Conf": "Texas A&M (1 Yr)",
+        "Class": "Texas A&M (1 Yr)",
+        "Pos": "",
+        "G": 12,
+        "Solo": 27,
+        "Ast": 10,
+        "Comb": 37,
+        "TFL": 14,
+        "Sk": 5,
+        "Int": 0,
+        "Yds": 0,
+        "IntTD": 0,
+        "PD": 2,
+        "FR": 0,
+        "Yds__1": 0,
+        "FRTD": 0,
+        "FF": 1,
+        "Awards": ""
+      }
+    }
   },
   {
+    "id": 26,
     "PFF Rank": 26,
     "Name": "Tyleik Williams",
     "School": "Ohio State",
@@ -257,9 +2496,11 @@
     "Height": "6'3",
     "Weight": "327 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 32.3
   },
   {
+    "id": 27,
     "PFF Rank": 27,
     "Name": "Josh Conerly Jr.",
     "School": "Oregon",
@@ -267,9 +2508,11 @@
     "Height": "6'4",
     "Weight": "315 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 31.1
   },
   {
+    "id": 28,
     "PFF Rank": 28,
     "Name": "Jahdae Barron",
     "School": "Texas",
@@ -277,9 +2520,11 @@
     "Height": "5'11",
     "Weight": "200 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 28.7
   },
   {
+    "id": 29,
     "PFF Rank": 29,
     "Name": "Colston Loveland",
     "School": "Michigan",
@@ -287,9 +2532,11 @@
     "Height": "6'5",
     "Weight": "245 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 29.2
   },
   {
+    "id": 30,
     "PFF Rank": 30,
     "Name": "Demetrius Knight Jr.",
     "School": "South Carolina",
@@ -297,9 +2544,11 @@
     "Height": "6'2",
     "Weight": "245 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 38.8
   },
   {
+    "id": 31,
     "PFF Rank": 31,
     "Name": "Trey Amos",
     "School": "Ole Miss",
@@ -307,9 +2556,11 @@
     "Height": "6'1",
     "Weight": "190 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 35.5
   },
   {
+    "id": 32,
     "PFF Rank": 32,
     "Name": "Shavon Revel Jr.",
     "School": "East Carolina",
@@ -317,9 +2568,11 @@
     "Height": "6'3",
     "Weight": "193 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 34.4
   },
   {
+    "id": 33,
     "PFF Rank": 33,
     "Name": "Donovan Ezeiruaku",
     "School": "Boston College",
@@ -327,9 +2580,11 @@
     "Height": "6'2",
     "Weight": "247 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 37
   },
   {
+    "id": 34,
     "PFF Rank": 34,
     "Name": "Elic Ayomanor",
     "School": "Stanford",
@@ -337,9 +2592,11 @@
     "Height": "6'2",
     "Weight": "210 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 40.4
   },
   {
+    "id": 35,
     "PFF Rank": 35,
     "Name": "T.J. Sanders",
     "School": "South Carolina",
@@ -347,9 +2604,11 @@
     "Height": "6'4",
     "Weight": "290 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 41.1
   },
   {
+    "id": 36,
     "PFF Rank": 36,
     "Name": "Walter Nolen",
     "School": "Ole Miss",
@@ -357,9 +2616,11 @@
     "Height": "6'3",
     "Weight": "305 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 20.5
   },
   {
+    "id": 37,
     "PFF Rank": 37,
     "Name": "Wyatt Milum",
     "School": "West Virginia",
@@ -367,9 +2628,11 @@
     "Height": "6'6",
     "Weight": "317 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 64.6
   },
   {
+    "id": 38,
     "PFF Rank": 38,
     "Name": "Landon Jackson",
     "School": "Arkansas",
@@ -377,9 +2640,11 @@
     "Height": "6'7",
     "Weight": "280 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 42.7
   },
   {
+    "id": 39,
     "PFF Rank": 39,
     "Name": "Princely Umanmielen",
     "School": "Arkansas",
@@ -387,9 +2652,11 @@
     "Height": "6'4",
     "Weight": "255 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 41.5
   },
   {
+    "id": 40,
     "PFF Rank": 40,
     "Name": "Jihaad Campbell",
     "School": "Alabama",
@@ -397,9 +2664,11 @@
     "Height": "6'3",
     "Weight": "244 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 40.9
   },
   {
+    "id": 41,
     "PFF Rank": 41,
     "Name": "Grey Zabel",
     "School": "North Dakota State",
@@ -407,9 +2676,11 @@
     "Height": "6'6",
     "Weight": "305 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 28.6
   },
   {
+    "id": 42,
     "PFF Rank": 42,
     "Name": "Darien Porter",
     "School": "Iowa State",
@@ -417,9 +2688,11 @@
     "Height": "6'4",
     "Weight": "200 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 52.8
   },
   {
+    "id": 43,
     "PFF Rank": 43,
     "Name": "Shedeur Sanders",
     "School": "Colorado",
@@ -427,9 +2700,11 @@
     "Height": "6'2",
     "Weight": "215 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 4.7
   },
   {
+    "id": 44,
     "PFF Rank": 44,
     "Name": "JT Tuimoloau",
     "School": "Ohio State",
@@ -437,9 +2712,11 @@
     "Height": "6'5",
     "Weight": "269 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 44.4
   },
   {
+    "id": 45,
     "PFF Rank": 45,
     "Name": "Xavier Watts",
     "School": "Notre Dame",
@@ -447,9 +2724,11 @@
     "Height": "6'0",
     "Weight": "203 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 47.2
   },
   {
+    "id": 46,
     "PFF Rank": 46,
     "Name": "Cam Skattebo",
     "School": "Arizona State",
@@ -457,9 +2736,11 @@
     "Height": "5'11",
     "Weight": "215 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 48.8
   },
   {
+    "id": 47,
     "PFF Rank": 47,
     "Name": "Gunnar Helm",
     "School": "Texas",
@@ -467,9 +2748,11 @@
     "Height": "6'5",
     "Weight": "250 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 76.6
   },
   {
+    "id": 48,
     "PFF Rank": 48,
     "Name": "Omarr Norman-Lott",
     "School": "Tennessee",
@@ -477,9 +2760,11 @@
     "Height": "6'3",
     "Weight": "315 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 50.7
   },
   {
+    "id": 49,
     "PFF Rank": 49,
     "Name": "Carson Schwesinger",
     "School": "UCLA",
@@ -487,9 +2772,11 @@
     "Height": "6'2",
     "Weight": "225 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 55.5
   },
   {
+    "id": 50,
     "PFF Rank": 50,
     "Name": "Savion Williams",
     "School": "TCU",
@@ -497,9 +2784,11 @@
     "Height": "6'5",
     "Weight": "225 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 57.9
   },
   {
+    "id": 51,
     "PFF Rank": 51,
     "Name": "Xavier Restrepo",
     "School": "Miami",
@@ -507,9 +2796,11 @@
     "Height": "5'10",
     "Weight": "189 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 51.5
   },
   {
+    "id": 52,
     "PFF Rank": 52,
     "Name": "Jalon Walker",
     "School": "Georgia",
@@ -517,9 +2808,11 @@
     "Height": "6'2",
     "Weight": "245 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 43.9
   },
   {
+    "id": 53,
     "PFF Rank": 53,
     "Name": "Dylan Sampson",
     "School": "Tennessee",
@@ -527,9 +2820,11 @@
     "Height": "5'11",
     "Weight": "201 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 59.2
   },
   {
+    "id": 54,
     "PFF Rank": 54,
     "Name": "Kaleb Johnson",
     "School": "Iowa",
@@ -537,9 +2832,11 @@
     "Height": "6'0",
     "Weight": "225 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 54
   },
   {
+    "id": 55,
     "PFF Rank": 55,
     "Name": "Kyle Kennard",
     "School": "South Carolina",
@@ -547,9 +2844,11 @@
     "Height": "6'5",
     "Weight": "254 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 55
   },
   {
+    "id": 56,
     "PFF Rank": 56,
     "Name": "Jayden Higgins",
     "School": "Iowa State",
@@ -557,9 +2856,11 @@
     "Height": "6'4",
     "Weight": "215 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 56.1
   },
   {
+    "id": 57,
     "PFF Rank": 57,
     "Name": "Mason Taylor",
     "School": "LSU",
@@ -567,9 +2868,11 @@
     "Height": "6'5",
     "Weight": "255 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 87.6
   },
   {
+    "id": 58,
     "PFF Rank": 58,
     "Name": "Jack Bech",
     "School": "TCU",
@@ -577,9 +2880,11 @@
     "Height": "6'2",
     "Weight": "215 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 41.9
   },
   {
+    "id": 59,
     "PFF Rank": 59,
     "Name": "Jordan Burch",
     "School": "Oregon",
@@ -587,9 +2892,11 @@
     "Height": "6'6",
     "Weight": "295 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 62.6
   },
   {
+    "id": 60,
     "PFF Rank": 60,
     "Name": "Cameron Williams",
     "School": "Texas",
@@ -597,9 +2904,11 @@
     "Height": "6'5",
     "Weight": "335 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 62
   },
   {
+    "id": 61,
     "PFF Rank": 61,
     "Name": "Jared Ivey",
     "School": "Ole Miss",
@@ -607,9 +2916,11 @@
     "Height": "6'6",
     "Weight": "285 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 63.7
   },
   {
+    "id": 62,
     "PFF Rank": 62,
     "Name": "Ozzy Trapilo",
     "School": "Boston College",
@@ -617,9 +2928,11 @@
     "Height": "6'8",
     "Weight": "309 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 66.8
   },
   {
+    "id": 63,
     "PFF Rank": 63,
     "Name": "Chris Paul Jr.",
     "School": "Ole Miss",
@@ -627,9 +2940,11 @@
     "Height": "6'1",
     "Weight": "235 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 67.5
   },
   {
+    "id": 64,
     "PFF Rank": 64,
     "Name": "Sebastian Castro",
     "School": "Iowa",
@@ -637,9 +2952,11 @@
     "Height": "5'11",
     "Weight": "205 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 73.1
   },
   {
+    "id": 65,
     "PFF Rank": 65,
     "Name": "Alfred Collins",
     "School": "Texas",
@@ -647,9 +2964,11 @@
     "Height": "6'5",
     "Weight": "320 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 69.7
   },
   {
+    "id": 66,
     "PFF Rank": 66,
     "Name": "Aireontae Ersey",
     "School": "Minnesota",
@@ -657,9 +2976,11 @@
     "Height": "6'6",
     "Weight": "330 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 46.2
   },
   {
+    "id": 67,
     "PFF Rank": 67,
     "Name": "Tyler Booker",
     "School": "Alabama",
@@ -667,9 +2988,11 @@
     "Height": "6'5",
     "Weight": "325 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 42.8
   },
   {
+    "id": 68,
     "PFF Rank": 68,
     "Name": "Kevin Winston Jr.",
     "School": "Penn State",
@@ -677,9 +3000,11 @@
     "Height": "6'2",
     "Weight": "208 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 75
   },
   {
+    "id": 69,
     "PFF Rank": 69,
     "Name": "Dillon Gabriel",
     "School": "Oregon",
@@ -687,9 +3012,11 @@
     "Height": "6'0",
     "Weight": "200 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 71.7
   },
   {
+    "id": 70,
     "PFF Rank": 70,
     "Name": "Jalen Milroe",
     "School": "Alabama",
@@ -697,9 +3024,11 @@
     "Height": "6'2",
     "Weight": "225 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 87.6
   },
   {
+    "id": 71,
     "PFF Rank": 71,
     "Name": "Jonah Savaiinaea",
     "School": "Arizona",
@@ -707,9 +3036,11 @@
     "Height": "6'5",
     "Weight": "336 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 71.1
   },
   {
+    "id": 72,
     "PFF Rank": 72,
     "Name": "Zy Alexander",
     "School": "LSU",
@@ -720,6 +3051,7 @@
     "My Score": ""
   },
   {
+    "id": 73,
     "PFF Rank": 73,
     "Name": "Jalen Royals",
     "School": "Utah State",
@@ -727,9 +3059,11 @@
     "Height": "6'0",
     "Weight": "205 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 72.4
   },
   {
+    "id": 74,
     "PFF Rank": 74,
     "Name": "Deone Walker",
     "School": "Kentucky",
@@ -737,9 +3071,11 @@
     "Height": "6'6",
     "Weight": "345 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 86.2
   },
   {
+    "id": 75,
     "PFF Rank": 75,
     "Name": "Maxwell Hairston",
     "School": "Kentucky",
@@ -747,9 +3083,11 @@
     "Height": "6'1",
     "Weight": "186 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 72.8
   },
   {
+    "id": 76,
     "PFF Rank": 76,
     "Name": "Lathan Ransom",
     "School": "Ohio State",
@@ -757,9 +3095,11 @@
     "Height": "6'1",
     "Weight": "210 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 81.3
   },
   {
+    "id": 77,
     "PFF Rank": 77,
     "Name": "TreVeyon Henderson",
     "School": "Ohio State",
@@ -767,9 +3107,11 @@
     "Height": "5'10",
     "Weight": "208 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 68.5
   },
   {
+    "id": 78,
     "PFF Rank": 78,
     "Name": "Josaiah Stewart",
     "School": "Michigan",
@@ -777,9 +3119,11 @@
     "Height": "6'1",
     "Weight": "245 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 76.3
   },
   {
+    "id": 79,
     "PFF Rank": 79,
     "Name": "Jeffrey Bassa",
     "School": "Oregon",
@@ -787,9 +3131,11 @@
     "Height": "6'2",
     "Weight": "235 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 81.9
   },
   {
+    "id": 80,
     "PFF Rank": 80,
     "Name": "Marcus Mbow",
     "School": "Purdue",
@@ -797,9 +3143,11 @@
     "Height": "6'5",
     "Weight": "300 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 77.5
   },
   {
+    "id": 81,
     "PFF Rank": 81,
     "Name": "Isaiah Bond",
     "School": "Texas",
@@ -807,9 +3155,11 @@
     "Height": "5'11",
     "Weight": "180 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 76.4
   },
   {
+    "id": 82,
     "PFF Rank": 82,
     "Name": "Harold Fannin Jr.",
     "School": "Bowling Green",
@@ -817,9 +3167,11 @@
     "Height": "6'4",
     "Weight": "230 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 88.8
   },
   {
+    "id": 83,
     "PFF Rank": 83,
     "Name": "Charles Grant",
     "School": "William & Mary",
@@ -827,9 +3179,11 @@
     "Height": "6'4",
     "Weight": "300 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 82.7
   },
   {
+    "id": 84,
     "PFF Rank": 84,
     "Name": "Azarey'h Thomas",
     "School": "Florida State",
@@ -837,9 +3191,11 @@
     "Height": "6'2",
     "Weight": "198 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 77.8
   },
   {
+    "id": 85,
     "PFF Rank": 85,
     "Name": "Nick Emmanwori",
     "School": "South Carolina",
@@ -847,9 +3203,11 @@
     "Height": "6'3",
     "Weight": "227 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 80.5
   },
   {
+    "id": 86,
     "PFF Rank": 86,
     "Name": "Derrick Harmon",
     "School": "Oregon",
@@ -857,9 +3215,11 @@
     "Height": "6'5",
     "Weight": "310 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 55
   },
   {
+    "id": 87,
     "PFF Rank": 87,
     "Name": "Tez Johnson",
     "School": "Oregon",
@@ -867,9 +3227,11 @@
     "Height": "5'10",
     "Weight": "165 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 82
   },
   {
+    "id": 88,
     "PFF Rank": 88,
     "Name": "Devin Neal",
     "School": "Kansas",
@@ -877,9 +3239,11 @@
     "Height": "5'11",
     "Weight": "215 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 89.1
   },
   {
+    "id": 89,
     "PFF Rank": 89,
     "Name": "Tre Harris",
     "School": "Ole Miss",
@@ -887,9 +3251,11 @@
     "Height": "6'3",
     "Weight": "210 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 12.7
   },
   {
+    "id": 90,
     "PFF Rank": 90,
     "Name": "Quinshon Judkins",
     "School": "Ohio State",
@@ -897,9 +3263,11 @@
     "Height": "6'0",
     "Weight": "219 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 71
   },
   {
+    "id": 91,
     "PFF Rank": 91,
     "Name": "Kaimon Rucker",
     "School": "North Carolina",
@@ -907,9 +3275,11 @@
     "Height": "6'2",
     "Weight": "265 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 93.4
   },
   {
+    "id": 92,
     "PFF Rank": 92,
     "Name": "Tate Ratledge",
     "School": "Georgia",
@@ -917,9 +3287,11 @@
     "Height": "6'6",
     "Weight": "320 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 89.4
   },
   {
+    "id": 93,
     "PFF Rank": 93,
     "Name": "Quandarrius Robinson",
     "School": "Alabama",
@@ -927,9 +3299,11 @@
     "Height": "6'5",
     "Weight": "241 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 94.9
   },
   {
+    "id": 94,
     "PFF Rank": 94,
     "Name": "Donovan Jackson",
     "School": "Ohio State",
@@ -937,9 +3311,11 @@
     "Height": "6'4",
     "Weight": "320 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 55.2
   },
   {
+    "id": 95,
     "PFF Rank": 95,
     "Name": "Andrew Mukuba",
     "School": "Texas",
@@ -947,9 +3323,11 @@
     "Height": "6'0",
     "Weight": "190 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 96.7
   },
   {
+    "id": 96,
     "PFF Rank": 96,
     "Name": "Mello Dotson",
     "School": "Kansas",
@@ -957,9 +3335,11 @@
     "Height": "6'1",
     "Weight": "190 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 94.5
   },
   {
+    "id": 97,
     "PFF Rank": 97,
     "Name": "RJ Harvey",
     "School": "UCF",
@@ -967,9 +3347,11 @@
     "Height": "5'9",
     "Weight": "208 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 99.9
   },
   {
+    "id": 98,
     "PFF Rank": 98,
     "Name": "Will Howard",
     "School": "Ohio State",
@@ -977,9 +3359,11 @@
     "Height": "6'4",
     "Weight": "235 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 96.2
   },
   {
+    "id": 99,
     "PFF Rank": 99,
     "Name": "Ashton Gillotte",
     "School": "Louisville",
@@ -987,9 +3371,11 @@
     "Height": "6'3",
     "Weight": "275 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 99.3
   },
   {
+    "id": 100,
     "PFF Rank": 100,
     "Name": "Jonas Sanker",
     "School": "Virginia",
@@ -997,9 +3383,11 @@
     "Height": "6'1",
     "Weight": "210 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 106.9
   },
   {
+    "id": 101,
     "PFF Rank": 101,
     "Name": "Sai'vion Jones",
     "School": "LSU",
@@ -1007,9 +3395,11 @@
     "Height": "6'6",
     "Weight": "280 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 117.1
   },
   {
+    "id": 102,
     "PFF Rank": 102,
     "Name": "Jared Wilson",
     "School": "Georgia",
@@ -1017,9 +3407,11 @@
     "Height": "6'3",
     "Weight": "310 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 100.1
   },
   {
+    "id": 103,
     "PFF Rank": 103,
     "Name": "DJ Giddens",
     "School": "Kansas State",
@@ -1027,9 +3419,11 @@
     "Height": "6'1",
     "Weight": "212 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 109.1
   },
   {
+    "id": 104,
     "PFF Rank": 104,
     "Name": "Riley Leonard",
     "School": "Notre Dame",
@@ -1037,9 +3431,11 @@
     "Height": "6'4",
     "Weight": "216 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 117.3
   },
   {
+    "id": 105,
     "PFF Rank": 105,
     "Name": "Billy Bowman Jr.",
     "School": "Oklahoma",
@@ -1047,9 +3443,11 @@
     "Height": "5'10",
     "Weight": "200 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 139.7
   },
   {
+    "id": 106,
     "PFF Rank": 106,
     "Name": "David Walker",
     "School": "Central Arkansas",
@@ -1057,9 +3455,11 @@
     "Height": "6'2",
     "Weight": "260 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 103.4
   },
   {
+    "id": 107,
     "PFF Rank": 107,
     "Name": "JJ Pegues",
     "School": "Ole Miss",
@@ -1067,9 +3467,11 @@
     "Height": "6'2",
     "Weight": "325 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 109.6
   },
   {
+    "id": 108,
     "PFF Rank": 108,
     "Name": "Nick Nash",
     "School": "San Jose State",
@@ -1077,9 +3479,11 @@
     "Height": "6'3",
     "Weight": "195 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 151.9
   },
   {
+    "id": 109,
     "PFF Rank": 109,
     "Name": "Tyler Baron",
     "School": "Miami",
@@ -1087,9 +3491,11 @@
     "Height": "6'5",
     "Weight": "260 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 142.1
   },
   {
+    "id": 110,
     "PFF Rank": 110,
     "Name": "Brandon Crenshaw-Dickson",
     "School": "Florida",
@@ -1097,9 +3503,11 @@
     "Height": "6'7",
     "Weight": "322 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 113.9
   },
   {
+    "id": 111,
     "PFF Rank": 111,
     "Name": "Barrett Carter",
     "School": "Clemson",
@@ -1107,9 +3515,11 @@
     "Height": "6'1",
     "Weight": "230 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 114.6
   },
   {
+    "id": 112,
     "PFF Rank": 112,
     "Name": "Jaylin Noel",
     "School": "Iowa State",
@@ -1117,9 +3527,11 @@
     "Height": "5'11",
     "Weight": "200 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 109.8
   },
   {
+    "id": 113,
     "PFF Rank": 113,
     "Name": "Jarquez Hunter",
     "School": "Auburn",
@@ -1127,9 +3539,11 @@
     "Height": "5'10",
     "Weight": "209 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 142.4
   },
   {
+    "id": 114,
     "PFF Rank": 114,
     "Name": "Kalel Mullings",
     "School": "Michigan",
@@ -1137,9 +3551,11 @@
     "Height": "6'2",
     "Weight": "233 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 143.8
   },
   {
+    "id": 115,
     "PFF Rank": 115,
     "Name": "Jacob Parrish",
     "School": "Kansas State",
@@ -1147,9 +3563,12 @@
     "Height": "5'10",
     "Weight": "198 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 120
+
   },
   {
+    "id": 116,
     "PFF Rank": 116,
     "Name": "Simeon Barrow Jr.",
     "School": "Miami",
@@ -1157,9 +3576,11 @@
     "Height": "6'3",
     "Weight": "290 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 146.6
   },
   {
+    "id": 117,
     "PFF Rank": 117,
     "Name": "Jack Kiser",
     "School": "Notre Dame",
@@ -1167,9 +3588,11 @@
     "Height": "6'3",
     "Weight": "231 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 121.9
   },
   {
+    "id": 118,
     "PFF Rank": 118,
     "Name": "Damien Martinez",
     "School": "Miami",
@@ -1177,9 +3600,11 @@
     "Height": "6'0",
     "Weight": "232 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 125.6
   },
   {
+    "id": 119,
     "PFF Rank": 119,
     "Name": "Tory Horton",
     "School": "Colorado State",
@@ -1187,9 +3612,11 @@
     "Height": "6'3",
     "Weight": "185 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 121.6
   },
   {
+    "id": 120,
     "PFF Rank": 120,
     "Name": "Connor Colby",
     "School": "Iowa",
@@ -1197,9 +3624,11 @@
     "Height": "6'6",
     "Weight": "310 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 157.3
   },
   {
+    "id": 121,
     "PFF Rank": 121,
     "Name": "Benjamin Yurosek",
     "School": "Georgia",
@@ -1207,9 +3636,11 @@
     "Height": "6'4",
     "Weight": "245 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 143.8
   },
   {
+    "id": 122,
     "PFF Rank": 122,
     "Name": "Chase Lundt",
     "School": "UConn",
@@ -1217,9 +3648,11 @@
     "Height": "6'8",
     "Weight": "305 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 127.7
   },
   {
+    "id": 123,
     "PFF Rank": 123,
     "Name": "Quinn Ewers",
     "School": "Texas",
@@ -1227,9 +3660,11 @@
     "Height": "6'2",
     "Weight": "210 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 143
   },
   {
+    "id": 124,
     "PFF Rank": 124,
     "Name": "Jackson Hawes",
     "School": "Georgia Tech",
@@ -1240,6 +3675,7 @@
     "My Score": ""
   },
   {
+    "id": 125,
     "PFF Rank": 125,
     "Name": "Luke Kandra",
     "School": "Cincinnati",
@@ -1250,6 +3686,7 @@
     "My Score": ""
   },
   {
+    "id": 126,
     "PFF Rank": 126,
     "Name": "Pat Bryant",
     "School": "Illinois",
@@ -1257,9 +3694,11 @@
     "Height": "6'3",
     "Weight": "200 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 137.1
   },
   {
+    "id": 127,
     "PFF Rank": 127,
     "Name": "Kobe Hudson",
     "School": "UCF",
@@ -1267,9 +3706,11 @@
     "Height": "6'1",
     "Weight": "200 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 146.6
   },
   {
+    "id": 128,
     "PFF Rank": 128,
     "Name": "Oronde Gadsden II",
     "School": "Syracuse",
@@ -1277,9 +3718,11 @@
     "Height": "6'5",
     "Weight": "236 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 208.1
   },
   {
+    "id": 129,
     "PFF Rank": 129,
     "Name": "Trevor Etienne",
     "School": "Georgia",
@@ -1287,9 +3730,11 @@
     "Height": "5'9",
     "Weight": "205 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 148.7
   },
   {
+    "id": 130,
     "PFF Rank": 130,
     "Name": "Shemar Turner",
     "School": "Texas A&M",
@@ -1297,9 +3742,11 @@
     "Height": "6'4",
     "Weight": "300 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 146.6
   },
   {
+    "id": 131,
     "PFF Rank": 131,
     "Name": "Kobe King",
     "School": "Penn State",
@@ -1307,9 +3754,11 @@
     "Height": "6'1",
     "Weight": "248 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 153.4
   },
   {
+    "id": 132,
     "PFF Rank": 132,
     "Name": "Kyle McCord",
     "School": "Syracuse",
@@ -1317,9 +3766,11 @@
     "Height": "6'3",
     "Weight": "220 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 166.6
   },
   {
+    "id": 133,
     "PFF Rank": 133,
     "Name": "Thomas Fidone II",
     "School": "Nebraska",
@@ -1327,9 +3778,11 @@
     "Height": "6'6",
     "Weight": "255 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 169.5
   },
   {
+    "id": 134,
     "PFF Rank": 134,
     "Name": "Tyler Cooper",
     "School": "Minnesota",
@@ -1337,9 +3790,11 @@
     "Height": "6'6",
     "Weight": "310 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 161.9
   },
   {
+    "id": 135,
     "PFF Rank": 135,
     "Name": "Jah Joyner",
     "School": "Minnesota",
@@ -1347,9 +3802,11 @@
     "Height": "6'5",
     "Weight": "265 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 161.5
   },
   {
+    "id": 136,
     "PFF Rank": 136,
     "Name": "Cody Simon",
     "School": "Ohio State",
@@ -1357,9 +3814,11 @@
     "Height": "6'2",
     "Weight": "235 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 163.2
   },
   {
+    "id": 137,
     "PFF Rank": 137,
     "Name": "Kyle Monangai",
     "School": "Rutgers",
@@ -1367,9 +3826,11 @@
     "Height": "5'9",
     "Weight": "209 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 166.1
   },
   {
+    "id": 138,
     "PFF Rank": 138,
     "Name": "Cody Lindenberg",
     "School": "Minnesota",
@@ -1377,9 +3838,11 @@
     "Height": "6'3",
     "Weight": "240 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 170.7
   },
   {
+    "id": 139,
     "PFF Rank": 139,
     "Name": "Denzel Burke",
     "School": "Ohio State",
@@ -1387,9 +3850,11 @@
     "Height": "6'1",
     "Weight": "193 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 157.5
   },
   {
+    "id": 140,
     "PFF Rank": 140,
     "Name": "Danny Stutsman",
     "School": "Oklahoma",
@@ -1397,9 +3862,11 @@
     "Height": "6'4",
     "Weight": "241 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 169.1
   },
   {
+    "id": 141,
     "PFF Rank": 141,
     "Name": "Dorian Strong",
     "School": "Virginia Tech",
@@ -1407,9 +3874,11 @@
     "Height": "6'1",
     "Weight": "185 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 164.6
   },
   {
+    "id": 142,
     "PFF Rank": 142,
     "Name": "Marcus Yarns",
     "School": "Delaware",
@@ -1417,9 +3886,11 @@
     "Height": "5'11",
     "Weight": "183 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 173.2
   },
   {
+    "id": 143,
     "PFF Rank": 143,
     "Name": "Jonah Monheim",
     "School": "USC",
@@ -1427,9 +3898,11 @@
     "Height": "6'5",
     "Weight": "310 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 170.4
   },
   {
+    "id": 144,
     "PFF Rank": 144,
     "Name": "Emery Jones Jr.",
     "School": "LSU",
@@ -1437,9 +3910,11 @@
     "Height": "6'6",
     "Weight": "315 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 164.3
   },
   {
+    "id": 145,
     "PFF Rank": 145,
     "Name": "Bhayshul Tuten",
     "School": "Virginia Tech",
@@ -1447,9 +3922,11 @@
     "Height": "5'11",
     "Weight": "209 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 175.3
   },
   {
+    "id": 146,
     "PFF Rank": 146,
     "Name": "Terrance Ferguson",
     "School": "Oregon",
@@ -1457,9 +3934,11 @@
     "Height": "6'5",
     "Weight": "255 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 113.4
   },
   {
+    "id": 147,
     "PFF Rank": 147,
     "Name": "Kurtis Rourke",
     "School": "Indiana",
@@ -1467,9 +3946,11 @@
     "Height": "6'5",
     "Weight": "223 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 194.5
   },
   {
+    "id": 148,
     "PFF Rank": 148,
     "Name": "Jordan James",
     "School": "Oregon",
@@ -1477,9 +3958,11 @@
     "Height": "5'10",
     "Weight": "210 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 183.5
   },
   {
+    "id": 149,
     "PFF Rank": 149,
     "Name": "O'Donnell Fortune",
     "School": "South Carolina",
@@ -1487,9 +3970,11 @@
     "Height": "6'1",
     "Weight": "185 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 170.9
   },
   {
+    "id": 150,
     "PFF Rank": 150,
     "Name": "Jack Nelson",
     "School": "Wisconsin",
@@ -1497,6 +3982,7 @@
     "Height": "6'7",
     "Weight": "316 lbs",
     "Draft Pulse Score": "",
-    "My Score": ""
+    "My Score": "",
+    "adp": 175.7
   }
 ]

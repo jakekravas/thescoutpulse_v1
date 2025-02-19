@@ -20,7 +20,8 @@ const Navbar = () => {
               <Link className='nav-link-animation nav-link active text-light align-items-center' aria-current='page' to='/rankings2'>Draft Rankings v2</Link>
             </li> */}
             <li className='nav-item'>
-              <a className='nav-link-animation nav-link text-light' href='#'>Mock Drafts</a>
+              <Link className='nav-link-animation nav-link active text-light align-items-center' aria-current='page' to='/MockDraft'>Mock Draft</Link>
+              {/* <a className='nav-link-animation nav-link text-light' href='#'>Mock Drafts</a> */}
             </li>
             <li className='nav-item'>
               <a className='nav-link-animation nav-link text-light' href='#'>My Team</a>
