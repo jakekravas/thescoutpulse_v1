@@ -7,14 +7,14 @@ const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-dark-color py-3 containerß'>
       <div className='container-fluid'>
-        <Link className='navbar-brand text-light fs-1' id='scoutpulse-nav-logo' to='/'>ScoutPulse</Link>
+        <Link className='navbar-brand text-light fs-36' id='scoutpulse-nav-logo' to='/'>ScoutPulse</Link>
         <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>
           <span className='navbar-toggler-icon'></span>
         </button>
         <div className='collapse navbar-collapse' id='navbarNav'>
           <ul className='navbar-nav ms-auto'>
             <li className='nav-item'>
-              <Link className='nav-link-animation nav-link active text-light align-items-center' aria-current='page' to='/rankings'>Draft Rankings</Link>
+              <Link className='nav-link-animation nav-link active text-light align-items-center fs-16' aria-current='page' to='/rankings'>Draft Rankings</Link>
             </li>
             {/* <li className='nav-item'>
               <Link className='nav-link-animation nav-link active text-light align-items-center' aria-current='page' to='/rankings2'>Draft Rankings v2</Link>

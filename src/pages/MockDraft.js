@@ -55,8 +55,8 @@ const MockDraft = () => {
   const currentPickRef = useRef(currentPick);
 
   
-  useEffect(async () => {
-    await fetchData();
+  useEffect(() => {
+    fetchData();
     startDraft();
   }, []);
 
@@ -228,10 +228,10 @@ const MockDraft = () => {
             console.log('currentPick:', currentPick);
           }}>test</button> */}
           <div id='draft-view-select-area'>
-            <p className={`text-center w-50 m-0 py-3 cursor-pointer draft-view-select ${draftViewAllPicks ? 'draft-view-select-current' : ''}`} onClick={() => toggleDraftViewSelectClass(true)}>Draft Results</p>
-            <p className={`text-center w-50 m-0 py-3 cursor-pointer draft-view-select ${!draftViewAllPicks ? 'draft-view-select-current' : ''}`} onClick={() => toggleDraftViewSelectClass(false)}>My Picks</p>
+            <p className={`text-center w-50 m-0 py-3 cursor-pointer draft-view-select fs-14 ${draftViewAllPicks ? 'draft-view-select-current' : ''}`} onClick={() => toggleDraftViewSelectClass(true)}>Draft Results</p>
+            <p className={`text-center w-50 m-0 py-3 cursor-pointer draft-view-select fs-14 ${!draftViewAllPicks ? 'draft-view-select-current' : ''}`} onClick={() => toggleDraftViewSelectClass(false)}>My Picks</p>
           </div>
-          <p className='m-0 bg-dark-color-2 text-light-color'>ROUND 1</p>
+          <p className='m-0 bg-dark-color-2 text-light-color fs-14'>ROUND 1</p>
           <div id='mock-draft-order-teams'>
 
             {prospects && draftOrder.map((team, index) => {
@@ -251,15 +251,15 @@ const MockDraft = () => {
                         <span className='text-muted'>{prospects[index].School}</span> */}
 
                         {/* <span className='text-gray-color'>{prospects[index].Position.slice(0,2)}</span> */}
-                        <span className='text-test-color'>{prospects[index].Position.slice(0,2)}</span>
-                        <img className='pick-view-past-college-logo' src={collegeLogos && collegeLogos[prospects[index].School]} alt=''/>
-                        <span className='text-test-color'>{prospects[index].School}</span>
+                        <span className='text-test-color fs-12'>{prospects[index].Position.slice(0,2)}</span>
+                        <img className='pick-view-past-college-logo' src={collegeLogos && collegeLogos[prospects[index].School]} alt={collegeLogos && collegeLogos[prospects[index].School]}/>
+                        <span className='text-test-color fs-12'>{prospects[index].School}</span>
 
                       </p>
                     </div>
                     <div className='pick-view-needs'>
-                      <p className='m-0 fs-12 text-gray-color'>Needs</p>
-                      <p className='m-0 fs-12'>{draftOrder[index].posNeeds}</p>
+                      <p className='m-0 fs-10 text-gray-color'>Needs</p>
+                      <p className='m-0 fs-10'>{draftOrder[index].posNeeds}</p>
                     </div>
                     {/* <div className='pick-view-current'></div> */}
                     {/* <div className='pick-view-upcoming'></div> */}
@@ -272,12 +272,12 @@ const MockDraft = () => {
                       <p className='m-0'>{index + 1}</p>
                     </div>
                     <img className='pick-view-logo-nfl' src={nflLogos && nflLogos[team['name']]} alt={nflLogos && nflLogos[team['name']]} />
-                    <div className='pick-view-past'>
+                    <div className='pick-view-past fs-14'>
                       On the clock
                     </div>
                     <div className='pick-view-needs'>
-                      <p className='m-0 fs-12 text-gray-color'>Needs</p>
-                      <p className='m-0 fs-12 text-white-color'>{draftOrder[index].posNeeds}</p>
+                      <p className='m-0 fs-10 text-gray-color'>Needs</p>
+                      <p className='m-0 fs-10 text-white-color'>{draftOrder[index].posNeeds}</p>
                     </div>
                     {/* <div className='pick-view-current'></div> */}
                     {/* <div className='pick-view-upcoming'></div> */}
@@ -290,12 +290,12 @@ const MockDraft = () => {
                       <p className='m-0'>{index + 1}</p>
                     </div>
                     <img className='pick-view-logo-nfl' src={nflLogos && nflLogos[team['name']]} alt={nflLogos && nflLogos[team['name']]} />
-                    <div className='pick-view-past text-gray-color'>
+                    <div className='pick-view-past text-gray-color fs-14'>
                       Upcoming
                     </div>
                     <div className='pick-view-needs'>
-                      <p className='m-0 fs-12 text-gray-color'>Needs</p>
-                      <p className='m-0 fs-12'>{draftOrder[index].posNeeds}</p>
+                      <p className='m-0 fs-10 text-gray-color'>Needs</p>
+                      <p className='m-0 fs-10'>{draftOrder[index].posNeeds}</p>
                     </div>
                     {/* <div className='pick-view-current'></div> */}
                     {/* <div className='pick-view-upcoming'></div> */}
@@ -346,13 +346,13 @@ const MockDraft = () => {
         <div id='mock-draft-pick-area'>
           <div id='pick-area-top' className='d-flex justify-content-between'>
             {/* <i class="fa-regular fa-clock"></i> */}
-            <p className='m-0'>{currentPick !== userPick ? "On the clock:" : "You're on the clock!" }</p>
-            <p className='m-0'>ROUND 1, PICK {currentPick}</p>
+            <p className='m-0 fs-14'>{currentPick !== userPick ? "On the clock:" : "You're on the clock!" }</p>
+            <p className='m-0 fs-14'>ROUND 1, PICK {currentPick}</p>
           </div>
           <div id='pick-area-user-team-info'>
             {/* <span><img src={nflLogos && nflLogos['Bears']} alt={nflLogos && nflLogos['Bears']} width='32px'/> Chicago Bears</span> */}
-            <span><img src={nflLogos && nflLogos[draftOrder[currentPick-1].name]} alt={nflLogos && nflLogos[draftOrder[currentPick-1].name]} width='32px'/> {draftOrder[currentPick-1].location} {draftOrder[currentPick-1].name}</span>
-            <div id='pick-area-user-team-needs'>
+            <span className='fs-16'><img src={nflLogos && nflLogos[draftOrder[currentPick-1].name]} alt={nflLogos && nflLogos[draftOrder[currentPick-1].name]} width='32px'/> {draftOrder[currentPick-1].location} {draftOrder[currentPick-1].name}</span>
+            <div id='pick-area-user-team-needs' className='fs-14'>
               Needs: {draftOrder[currentPick-1].posNeeds}
             </div>
           </div>
@@ -379,19 +379,19 @@ const MockDraft = () => {
             {undraftedProspects && undraftedProspects.map((prospect, index) => (
               <div className='pick-area-prospect py-3 mx-1'>
                 <div className='quick-info d-flex'>
-                  <div className='text-center mx-2'>
+                  <div className='text-center mx-2 fs-14'>
                     <p className='m-0 text-gray-color'>Rank</p>
                     <p className='m-0'>{prospect['PFF Rank']}</p>
                   </div>
-                  <div className='text-center mx-3'>
+                  <div className='text-center mx-3 fs-14'>
                     <p className='m-0 text-gray-color'>ADP</p>
                     <p className='m-0'>{prospect['adp']}</p>
                   </div>
                   <div className='d-flex ms-3'>
                     <img className='pick-area-prospect-college-logo' src={collegeLogos && collegeLogos[prospect['School']]} alt='logo'/>
                     <div>
-                      <p className='m-0 text-blue-color fs-18 cursor-pointer hover-underline fw-bold'>{prospect['Name']}</p>
-                      <p className='m-0 text-gray-color'><span className='fw-bold'>{prospect['Position']}</span> {prospect['School']}</p>
+                      <p className='m-0 text-blue-color fs-14 cursor-pointer hover-underline fw-bold'>{prospect['Name']}</p>
+                      <p className='m-0 text-gray-color fs-12'><span className='fw-bold'>{prospect['Position']}</span> {prospect['School']}</p>
                     </div>
                   </div>
                 </div>

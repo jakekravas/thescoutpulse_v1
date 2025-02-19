@@ -249,7 +249,7 @@ const Rankings = () => {
                   <th scope='col'><span className='rankings-table-header' onClick={() => sortRankings('My Score')}>My Score <i class={`${sortArrowClass} ${sortBy === 'My Score' ? 'visible' : 'invisible'}`}/></span></th> */}
                 </tr>
               </thead>
-              <tbody>
+              <tbody id='asdf'>
                 {/* if searchResults is NOT empty, then map it here instead of mapping filteredProspects. Else, map filteredProspects as shown below */}
                 {/* {filteredProspects && filteredProspects.map((prospect, index) => (
                   <tr key={index}>
