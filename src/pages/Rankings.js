@@ -199,7 +199,7 @@ const Rankings = () => {
       <div className='bg-dark-color'>
         <div className='container'>
           
-          <h2 className='text-main-color'>2025 NFL Draft Prospect Rankings</h2>
+          <h5 className='text-main-color'>2025 NFL Draft Prospect Rankings</h5>
             <select id='view-amount' className='my-2' name='view-amount' onChange={(e) => viewAmountChange(parseInt(e.target.value))}>
               <option value='50'>Top 50</option>
               <option value='100'>Top 100</option>

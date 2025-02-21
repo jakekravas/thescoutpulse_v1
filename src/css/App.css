@@ -60,6 +60,8 @@ body {
 .fs-18 {font-size: 18px;}
 .fs-20 {font-size: 20px;}
 .fs-24 {font-size: 24px;}
+.fs-28 {font-size: 36px;}
+.fs-32 {font-size: 36px;}
 .fs-36 {font-size: 36px;}
 
 .cursor-pointer {cursor: pointer !important;}
@@ -99,7 +101,7 @@ body {
 }
 
 .showcase-title {
-  font-size: 62px;
+  font-size: 52px;
 }
 
 .nav-link-animation {
@@ -130,7 +132,7 @@ body {
 }
 
 .showcase-bottom-img {
-  width: 200px;
+  width: 180px;
 }
 
 /* .anim-test {
@@ -157,7 +159,7 @@ body {
 /* RANKINGS (rt = rankings table) */
 #view-amount {
   margin: 10px 2px;
-  font-size: 18px;
+  font-size: 16px;
   /* font-size: 30px; */
 }
 
@@ -178,6 +180,7 @@ body {
 
 .rankings-table-data{
   line-height: 90px;
+  font-size: 14px;
   /* padding: 0 40p !important; */
 }
 
@@ -264,7 +267,8 @@ body {
   width: 33.3% !important;
   display: flex;
   flex-direction: column;
-  height: 87.5vh;
+  /* height: 87.5vh; */
+  height: 85vh;
   color: rgb(248, 249, 250);
   background-color: var(--dark-color-2);
   border-radius: 5px;
@@ -349,6 +353,7 @@ body {
   /* justify-content: space-between; */
   background-color: var(--dark-color-2);
   color: rgb(248, 249, 250);
+  width: 100%;
 }
 
 .mock-draft-pick-view-current {
@@ -413,7 +418,8 @@ body {
   margin: 0 20px;
   border-radius: 4px 4px 0 0;
   /* height: 1200px; */
-  height: 70vh;
+  /* height: 70vh; */
+  height: 63.5vh;
 }
 
 #pick-area-top {
@@ -491,4 +497,14 @@ body {
 /* .draft-btn:hover { */
 .draft-btn-hover:hover {
   background-color: rgb(45, 143, 249);
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1400px) {
+  .pick-view-needs {
+    /* width: 5% !important */
+    margin-left: 34px;
+  }
 }

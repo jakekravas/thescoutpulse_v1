@@ -12,16 +12,16 @@ const Home = () => {
           <div className='container'>
               <div className='d-sm-flex align-items-center justify-content-between pe-2'>
                   <div>
-                      <p className='text-main-color fs-5'>#1 on draft evaluations</p>
+                      <p className='text-main-color fs-18'>#1 on draft evaluations</p>
                       <h1 className='showcase-title'>
                           Discover<br/>
                           Tomorrow's NFL<br/>
                           Stars
                       </h1>
-                      <p className='lead mt-4 mr-3 pe-5'>
+                      <p className='lead mt-4 mr-3 pe-5 fs-18'>
                         Unite with Draft Pulse: Your Gateway to Discover NFL Draft Prospects - from SEC Powerhouses to Hidden Draft Gems. Test Your Scouting Skills Against the Best!
                       </p>
-                      <button className='btn-main-color my-4 btn-glow'>Sign up today</button>
+                      <button className='btn-main-color my-4 p-3 btn-glow'>Sign up today</button>
                   </div>
                   <img className='img-fluid w-50 d-none d-sm-block' src='/img/draft.jpg' alt='NFL Draft'/>
               </div>
@@ -31,8 +31,8 @@ const Home = () => {
       {/* SHOWCASE BOTTOM */}
       <section className='bg-main-color text-light text-center text-sm-start pt-5' id='showcase-bottom'>
           <div className='container text-center text-dark-color'>
-              <h2 className='fw-bold'>The #1 interactive NFL Draft community platform</h2>
-              <p className='lead'>As recognized by spots analysts, fans, and scouting experts</p>
+              <h3 className='fw-bold'>The #1 interactive NFL Draft community platform</h3>
+              <p className='lead fs-18'>As recognized by spots analysts, fans, and scouting experts</p>
               {/* <div className='d-flex justify-content-between'> */}
               <div className='pb-5'>
 
