@@ -345,12 +345,10 @@ const MockDraft = () => {
 
         <div id='mock-draft-pick-area'>
           <div id='pick-area-top' className='d-flex justify-content-between'>
-            {/* <i class="fa-regular fa-clock"></i> */}
             <p className='m-0 fs-14'>{currentPick !== userPick ? "On the clock:" : "You're on the clock!" }</p>
             <p className='m-0 fs-14'>ROUND 1, PICK {currentPick}</p>
           </div>
           <div id='pick-area-user-team-info'>
-            {/* <span><img src={nflLogos && nflLogos['Bears']} alt={nflLogos && nflLogos['Bears']} width='32px'/> Chicago Bears</span> */}
             <span className='fs-16'><img src={nflLogos && nflLogos[draftOrder[currentPick-1].name]} alt={nflLogos && nflLogos[draftOrder[currentPick-1].name]} width='32px'/> {draftOrder[currentPick-1].location} {draftOrder[currentPick-1].name}</span>
             <div id='pick-area-user-team-needs' className='fs-14'>
               Needs: {draftOrder[currentPick-1].posNeeds}

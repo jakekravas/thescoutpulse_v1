@@ -289,7 +289,6 @@ body {
   border: 1px solid #4d5154;
   color: white;
   /* align-items: center; */
-
 }
 
 
@@ -299,12 +298,10 @@ body {
   width: 33.3% !important;
   display: flex;
   flex-direction: column;
-  /* height: 87.5vh; */
   height: 85vh;
   color: rgb(248, 249, 250);
   background-color: var(--dark-color-2);
   border-radius: 5px;
-  /* height: 1360px; */
   /* scrollbar-color: red !important; */
 }
 
@@ -445,13 +442,13 @@ body {
 
 /* mock draft PICK AREA */
 #mock-draft-pick-area {
+  display: flex;
+  flex-direction: column;
   width: 66.6%;
   background-color: grey;
   margin: 0 20px;
   border-radius: 4px 4px 0 0;
-  /* height: 1200px; */
-  /* height: 70vh; */
-  height: 63.5vh;
+  height: 85vh;
 }
 
 #pick-area-top {
