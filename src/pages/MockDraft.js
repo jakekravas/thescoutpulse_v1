@@ -62,7 +62,7 @@ const MockDraft = () => {
 
 
   useEffect(() => {
-    if (currentPick === userPick) {
+    if (currentPick === userPick || currentPick > 31) {
       clearInterval(intervalId.current);
     }
   }, [currentPick]);
@@ -106,6 +106,9 @@ const MockDraft = () => {
   //   {name: 'Giants', location: 'New York', pick: 3, posNeeds: 'QB, T, ED, CB', pickSelections: []},
   // ]);
   const getCpuDraftPick = () => {
+    console.log('hit getCpuDraftPick')
+    console.log('currentPick:', currentPick)
+
     const newProspect = undraftedProspectsRef.current[0];
     if (newProspect) {
       // draftOrder[currentPick-1].pickSelections.push(newProspect);
@@ -155,6 +158,8 @@ const MockDraft = () => {
       console.log('undraftedProspectsRef.current:', undraftedProspectsRef.current)
       console.log('selection:', selection)
 
+      console.log('set as:', currentDraftedProspects => [...currentDraftedProspects, selection])
+
       setDraftedProspects(currentDraftedProspects => [...currentDraftedProspects, selection]);
 
       setUndraftedProspects(currentUndraftedProspects => [
@@ -163,6 +168,9 @@ const MockDraft = () => {
       ]);
 
       setCurrentPick(current => current + 1);
+      intervalId.current = setInterval(function() {
+        getCpuDraftPick();
+      }, 1000);
     }
   }
 
@@ -243,7 +251,7 @@ const MockDraft = () => {
                     </div>
                     <img className='pick-view-logo-nfl' src={nflLogos && nflLogos[team['name']]} alt={nflLogos && nflLogos[team['name']]} />
                     <div className='pick-view-past'>
-                      <p className='pick-view-past-name hover-underline'>{prospects[index].Name}</p>
+                      <p className='pick-view-past-name hover-underline'>{draftedProspects[index].Name}</p>
                       {/* <p className='pick-view-past-name hover-underline'>{draftOrder[index]?.pickSelections[0]?.Name}</p> */}
                       <p className='pick-view-past-info'>
                         {/* <span className='text-muted'>{prospects[index].Position.slice(0,2)}</span>
@@ -251,8 +259,8 @@ const MockDraft = () => {
                         <span className='text-muted'>{prospects[index].School}</span> */}
 
                         {/* <span className='text-gray-color'>{prospects[index].Position.slice(0,2)}</span> */}
-                        <span className='text-test-color fs-12'>{prospects[index].Position.slice(0,2)}</span>
-                        <img className='pick-view-past-college-logo' src={collegeLogos && collegeLogos[prospects[index].School]} alt={collegeLogos && collegeLogos[prospects[index].School]}/>
+                        <span className='text-test-color fs-12'>{draftedProspects[index].Position.slice(0,2)}</span>
+                        <img className='pick-view-past-college-logo' src={collegeLogos && collegeLogos[draftedProspects[index].School]} alt={collegeLogos && collegeLogos[draftedProspects[index].School]}/>
                         <span className='text-test-color fs-12'>{prospects[index].School}</span>
 
                       </p>
@@ -400,7 +408,7 @@ const MockDraft = () => {
                     className={`draft-btn ${currentPick === userPick ? 'draft-btn-hover' : ''}`}
                     style={{ opacity: currentPick === userPick ? 1 : 0.65 }}
                     disabled={currentPick !== userPick}
-                    // onClick={() => getUserDraftPick(prospect.id)}
+                    onClick={() => getUserDraftPick(prospect.id)}
                   >
                     Draft
                   </button>
