@@ -6,7 +6,6 @@
   --dark-color-3: #2c3034;
   --light-color: #E3E1E8;
   --blue-color: rgb(0, 123, 255);
-
 }
 html {
   /* scrollbar-color: red !important; */
@@ -61,6 +60,11 @@ body {
 .flex-break {
   flex-basis: 100%;
   height: 0;
+}
+
+.my-30px {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .btn-main-color {
@@ -538,6 +542,9 @@ body {
   color: rgb(240, 240, 240);
   font-size: 14px;
 }
+.delete-btn:hover {
+  background-color: rgb(215, 73, 45);
+}
 
 .dark-btn {
   line-height: initial !important;
@@ -547,6 +554,10 @@ body {
   border-radius: 3px;
   color: rgb(240, 240, 240);
   font-size: 14px;
+}
+
+.dark-btn:hover {
+  background-color: #414141;
 }
 
 

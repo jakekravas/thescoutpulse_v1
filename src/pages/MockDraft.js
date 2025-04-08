@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import Modal from 'react-modal';
 import Navbar from '../components/Navbar';
 
 const MockDraft = () => {
@@ -53,6 +54,7 @@ const MockDraft = () => {
   const intervalId = useRef(null);
   const undraftedProspectsRef = useRef(undraftedProspects);
   const currentPickRef = useRef(currentPick);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   
   useEffect(() => {
@@ -82,29 +84,6 @@ const MockDraft = () => {
     }, 1000);
   }
 
-  // const getCpuDraftPick = () => {
-  //   // const newProspect = draftedProspects[0];
-  //   const newProspect = undraftedProspects[0];
-  //   // newProspect.draftedBy = teamOnTheClock;
-  //   setDraftedProspects(currentDraftedProspects => [...currentDraftedProspects, newProspect]);
-
-  //   setUndraftedProspects(currentUndraftedProspects => [
-  //     ...currentUndraftedProspects.slice(0, 0),
-  //     ...currentUndraftedProspects.slice(1)
-  //   ]);
-
-  //   console.log('undraftedProspectsRef:', undraftedProspectsRef)
-
-  //   // setTeamOnTheClock(draftOrder[currentPick + 1].name);
-  //   // console.log('newpr', newProspect)
-  //   setCurrentPick(current => current + 1);
-  // }
-
-  // const [draftOrder, setDraftOrder] = useState([
-  //   {name: 'Titans', location: 'Tennessee', pick: 1, posNeeds: 'QB, T, ED, CB', pickSelections: []},
-  //   {name: 'Browns', location: 'Cleveland', pick: 2, posNeeds: 'QB, T, ED, CB', pickSelections: []},
-  //   {name: 'Giants', location: 'New York', pick: 3, posNeeds: 'QB, T, ED, CB', pickSelections: []},
-  // ]);
   const getCpuDraftPick = () => {
     console.log('hit getCpuDraftPick')
     console.log('currentPick:', currentPick)
@@ -117,11 +96,10 @@ const MockDraft = () => {
 
       const updatedDraftOrder = draftOrder.map((team, index) => {
         if (index === currentPickRef - 1) {
-          console.log('HIT IF');
 
           return {
             ...team,
-            pickSelections: [...team.pickSelections, newProspect] // Step 2: Append newProspect
+            pickSelections: [...team.pickSelections, newProspect]
           };
         }
         return team;
@@ -220,6 +198,38 @@ const MockDraft = () => {
     } else if (!viewAllClicked && draftViewAllPicks) {
       setDraftViewAllPicks(false)
     }
+  }
+
+  const modalStyles = {
+    content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
+      // backgroundColor: 'rgb(77, 81, 84)',
+      backgroundColor: 'rgb(33, 37, 41)',
+      color: 'rgb(240, 240, 240)',
+      border: 'rgb(77, 81, 84)'
+      
+    },
+    overlay: {
+      backgroundColor: 'rgba(0, 0, 0, 0.5)', // Change the background color here
+    }
+  };
+
+  function openModal() {
+    setModalIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    // subtitle.style.color = 'black';
+  }
+
+  function closeModal() {
+    setModalIsOpen(false);
   }
 
   return (
@@ -403,7 +413,8 @@ const MockDraft = () => {
                 </div>
 
                 <div className='d-flex align-content-center me-2'>
-                  <p className='m-0 mi-text'>More Info</p>
+                  <p className='m-0 mi-text' onClick={() => setModalIsOpen(true)}>More Info</p>
+                  {/* <p className='m-0 mi-text' onClick={() => console.log('OPEN MODAL')}>More Info</p> */}
                   <button 
                     className={`draft-btn ${currentPick === userPick ? 'draft-btn-hover' : ''}`}
                     style={{ opacity: currentPick === userPick ? 1 : 0.65 }}
@@ -420,6 +431,18 @@ const MockDraft = () => {
           </div>
 
         </div>
+        <Modal
+          isOpen={modalIsOpen}
+          onAfterOpen={afterOpenModal}
+          onRequestClose={closeModal}
+          style={modalStyles}
+          contentLabel="Example Modal"
+        >
+          {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2> */}
+          <p>Are you sure you want to delete all custom prospects? This cannot be undone.</p>
+          <button onClick={closeModal} className='dark-btn'>Cancel</button>
+          {/* <button onClick={resetProspects} className='ms-2 delete-btn'>Delete</button> */}
+        </Modal>
       </section>
     </div>
   )
