@@ -15,6 +15,7 @@ const Rankings = () => {
   const [viewAmount, setViewAmount] = useState(150);
   const [rankingsType, setRankingsType] = useState('pff');
   const [customProspects, setCustomProspects] = useState([]);
+  const [filteredCustomProspects, setFilteredCustomProspects] = useState([]);
 
 
   const [customRankInput, setCustomRankInput] = useState('');
@@ -37,6 +38,9 @@ const Rankings = () => {
   const [customWeightInputEdit, setCustomWeightInputEdit] = useState('');
   const [customDraftPulseScoreInputEdit, setCustomDraftPulseScoreInputEdit] = useState('');
   const [customMyScoreInputEdit, setCustomMyScoreInputEdit] = useState('');
+
+  const [customSearchVal, setCustomSearchVal] = useState('');
+  const [customSearchResults, setCustomSearchResults] = useState([]);
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -68,143 +72,168 @@ const Rankings = () => {
         console.error('Error loading the JSON file: ', error);
     }
 
-    // console.log(JSON.parse(localStorage.getItem('customProspects')))
     let customProspectsStorage = localStorage.getItem('customProspects');
     customProspectsStorage = JSON.parse(customProspectsStorage);
+
     if (customProspectsStorage) {
-      console.log('HIT STORAGE IF')
-      console.log(customProspectsStorage)
       setCustomProspects(customProspectsStorage)
+      setFilteredCustomProspects(customProspectsStorage)
     }
   };
 
+  const performSortAsc = (arrayToSort, attribute) => {
+    console.log('ATTRIBUTE: ', attribute)
+    const arr = [...arrayToSort].sort((a, b) => {
+      if (typeof a[attribute] === 'number') {
+          return a[attribute] - b[attribute];
+      } else {
+          const nameA = a[attribute].toUpperCase(); // assuming other attributes are strings
+          const nameB = b[attribute].toUpperCase();
+          if (nameA < nameB) return -1;
+          if (nameA > nameB) return 1;
+          return 0;
+      }
+    });
+    return arr;
+  }
+
+  const performSortDesc = (arrayToSort, attribute) => {
+    console.log('ATTRIBUTE: ', attribute)
+    const arr = [...arrayToSort].sort((a, b) => {
+      if (typeof a[attribute] === 'number') {
+        return b[attribute] - a[attribute]; // reverse the subtraction order for numbers
+      } else {
+          const nameA = a[attribute].toUpperCase(); // assuming other attributes are strings
+          const nameB = b[attribute].toUpperCase();
+          if (nameA < nameB) return 1; // reverse the outcomes for string comparisons
+          if (nameA > nameB) return -1;
+          return 0;
+      }
+    });
+    return arr;
+  }
 
   const sortRankings = (attribute) => {
 
     if (sortDirection === 'desc') {
-      const sortedProspects = [...prospects].sort((a, b) => {
-        if (typeof a[attribute] === 'number') {
-            return a[attribute] - b[attribute];
-        } else {
-            const nameA = a[attribute].toUpperCase(); // assuming other attributes are strings
-            const nameB = b[attribute].toUpperCase();
-            if (nameA < nameB) return -1;
-            if (nameA > nameB) return 1;
-            return 0;
-        }
-      });
+
+      if (rankingsType === 'pff') {
+        const sortedProspects = performSortAsc(prospects, attribute);
+        const sortedFilteredProspects = performSortAsc(filteredProspects, attribute);
+        const sortedSearchResults = performSortAsc(searchResults, attribute);
+    
+        setProspects(sortedProspects);
+        setFilteredProspects(sortedFilteredProspects);
+        setSearchResults(sortedSearchResults);
+        setSortBy(attribute);
+        setSortDirection('asc');
+        setSortArrowClass('fa fa-chevron-up');
+
+      } else {
+        const sortedProspects = performSortAsc(customProspects, attribute);
+        const sortedFilteredProspects = performSortAsc(filteredCustomProspects, attribute);
+        // const sortedSearchResults = performSortAsc(searchResults, attribute);
+    
+        setCustomProspects(sortedProspects);
+        setFilteredCustomProspects(sortedFilteredProspects);
+        // setCustomSearchResults(sortedSearchResults);
+        setSortBy(attribute);
+        setSortDirection('asc');
+        setSortArrowClass('fa fa-chevron-up');
+      }
+
+
+    } else {
+
+      if (rankingsType === 'pff') {
+        const sortedProspects = performSortDesc(prospects, attribute);
+        const sortedFilteredProspects = performSortDesc(filteredProspects, attribute);
+        const sortedSearchResults = performSortDesc(searchResults, attribute);
   
-      const sortedFilteredProspects = [...filteredProspects].sort((a, b) => {
-          if (typeof a[attribute] === 'number') {
-              return a[attribute] - b[attribute];
-          } else {
-              const nameA = a[attribute].toUpperCase(); // assuming other attributes are strings
-              const nameB = b[attribute].toUpperCase();
-              if (nameA < nameB) return -1;
-              if (nameA > nameB) return 1;
-              return 0;
-          }
-      });
-
-      const sortedSearchResults = [...searchResults].sort((a, b) => {
-          if (typeof a[attribute] === 'number') {
-              return a[attribute] - b[attribute];
-          } else {
-              const nameA = a[attribute].toUpperCase(); // assuming other attributes are strings
-              const nameB = b[attribute].toUpperCase();
-              if (nameA < nameB) return -1;
-              if (nameA > nameB) return 1;
-              return 0;
-          }
-      });
+        setProspects(sortedProspects);
+        setFilteredProspects(sortedFilteredProspects);
+        setSearchResults(sortedSearchResults);
+        setSortBy(attribute);
+        setSortDirection('desc');
+        setSortArrowClass('fa fa-chevron-down');
+        
+      } else {
+        const sortedProspects = performSortDesc(customProspects, attribute);
+        const sortedFilteredProspects = performSortDesc(filteredCustomProspects, attribute);
+        // const sortedSearchResults = performSortDesc(searchResults, attribute);
   
-      setProspects(sortedProspects);
-      setFilteredProspects(sortedFilteredProspects);
-      setSearchResults(sortedSearchResults);
-      setSortBy(attribute);
-      setSortDirection('asc');
-      setSortArrowClass('fa fa-chevron-up');
+        setCustomProspects(sortedProspects);
+        setFilteredCustomProspects(sortedFilteredProspects);
+        // setCustomSearchResults(sortedSearchResults);
+        setSortBy(attribute);
+        setSortDirection('desc');
+        setSortArrowClass('fa fa-chevron-down');
 
-    } else if (sortDirection === 'asc') {
-      const sortedProspects = [...prospects].sort((a, b) => {
-        if (typeof a[attribute] === 'number') {
-            return b[attribute] - a[attribute]; // reverse the subtraction order for numbers
-        } else {
-            const nameA = a[attribute].toUpperCase(); // assuming other attributes are strings
-            const nameB = b[attribute].toUpperCase();
-            if (nameA < nameB) return 1; // reverse the outcomes for string comparisons
-            if (nameA > nameB) return -1;
-            return 0;
-        }
-      });
-      const sortedFilteredProspects = [...filteredProspects].sort((a, b) => {
-        if (typeof a[attribute] === 'number') {
-            return b[attribute] - a[attribute]; // reverse the subtraction order for numbers
-        } else {
-            const nameA = a[attribute].toUpperCase(); // assuming other attributes are strings
-            const nameB = b[attribute].toUpperCase();
-            if (nameA < nameB) return 1; // reverse the outcomes for string comparisons
-            if (nameA > nameB) return -1;
-            return 0;
-        }
-      });
-      const sortedSearchResults = [...searchResults].sort((a, b) => {
-        if (typeof a[attribute] === 'number') {
-            return b[attribute] - a[attribute]; // reverse the subtraction order for numbers
-        } else {
-            const nameA = a[attribute].toUpperCase(); // assuming other attributes are strings
-            const nameB = b[attribute].toUpperCase();
-            if (nameA < nameB) return 1; // reverse the outcomes for string comparisons
-            if (nameA > nameB) return -1;
-            return 0;
-        }
-      });
-
-      setProspects(sortedProspects);
-      setFilteredProspects(sortedFilteredProspects);
-      setSearchResults(sortedSearchResults);
-      setSortBy(attribute);
-      setSortDirection('desc');
-      setSortArrowClass('fa fa-chevron-down');
+      }
     }
   }
 
 
   const filterPositionView= (pos) => {
     setPositionView(pos);
-    // setSearchVal('');
     clearSearch();
 
     if (pos === 'OVR') {
       setFilteredProspects(prospects);
+      setFilteredCustomProspects(customProspects);
     } else if (pos === 'QB' || pos === 'RB' || pos === 'WR' || pos === 'TE' || pos === 'OT' || pos === 'EDGE' || pos === 'LB' || pos === 'K' || pos === 'P') {
       setFilteredProspects(prospects.filter(prospect => prospect.Position === pos))
+      setFilteredCustomProspects(customProspects.filter(prospect => prospect.Position === pos))
     } else if (pos === 'IOL') {
       setFilteredProspects(prospects.filter(prospect => prospect.Position === 'OG' || prospect.Position === 'C'))
+      setFilteredCustomProspects(customProspects.filter(prospect => prospect.Position === 'IOL' || prospect.Position === 'OG' || prospect.Position === 'C'))
     } else if (pos === 'IDL') {
       setFilteredProspects(prospects.filter(prospect => prospect.Position === 'DI' || prospect.Position === 'DT'))
+      setFilteredCustomProspects(customProspects.filter(prospect => prospect.Position === 'IDL' || prospect.Position === 'DI' || prospect.Position === 'DT'))
     } else if (pos === 'DB') {
       setFilteredProspects(prospects.filter(prospect => prospect.Position === 'CB' || prospect.Position === 'S'))
+      setFilteredCustomProspects(customProspects.filter(prospect => prospect.Position === 'DB' || prospect.Position === 'CB' || prospect.Position === 'S'))
     }
   }
 
   const searchForProspect=(searchInput) => {
+    console.log('HIT SEARCH');
 
     setSearchVal(searchInput);
+
+    console.log('FP: ', filteredProspects)
+
 
     setSearchResults(filteredProspects.filter(prospect =>
       prospect.Name.toLowerCase().startsWith(searchInput.toLowerCase()) || prospect.Name.toLowerCase().split(' ')[1].startsWith(searchInput.toLowerCase())
     ));
-
-    // setSearchResults(filteredProspects.filter(prospect => prospect.Name.toLowerCase().startsWith(searchInput)));
-    
-    // setSearchVal(searchInput);
-    // if (searchInput) {
-    //   setFilteredProspects(filteredProspects.filter(prospect => prospect.Name.toLowerCase().startsWith(searchInput)));
-    // } else {
-    //   filterPositionView(positionView);
-    // }
   }
+
+  const searchForCustomProspect=(searchInput) => {
+    console.log('HIT CUSTOM SEARCH');
+
+    setCustomSearchVal(searchInput);
+
+    console.log('FCP: ', filteredCustomProspects)
+
+    setCustomSearchResults(filteredCustomProspects.filter(prospect =>
+      prospect.Name.toLowerCase().startsWith(searchInput.toLowerCase()) || prospect.Name.toLowerCase().split(' ')[1].startsWith(searchInput.toLowerCase())
+    ));
+    // setCustomSearchResults(
+    //   filteredCustomProspects.filter(prospect => {
+    //     const nameLower = prospect.Name?.toLowerCase() || '';
+    //     const lastName = nameLower.split(' ')[1];
+    //     console.log(nameLower)
+    //     console.log(lastName)
+    //     return (
+    //       nameLower.startsWith(searchInput.toLowerCase()) ||
+    //       (lastName && lastName.startsWith(searchInput.toLowerCase()))
+    //     );
+    //   })
+    // );
+  }
+
+  
 
   const viewAmountChange=(val)=> {
     setViewAmount(val);
@@ -250,14 +279,10 @@ const Rankings = () => {
   }
 
   const addCustomProspect = () => {
-    console.log(customNameInput)
-    console.log(customSchoolInput)
-    console.log(customPositionInput)
-    console.log(customHeightInput)
-    console.log(customWeightInput)
     
     if (customNameInput && customSchoolInput && customPositionInput && customHeightInput && customWeightInput) {
       const newProspect = {
+        "id": customProspects.length + 1,
         "Rank": customProspects.length + 1,
         "Name": customNameInput,
         "School": customSchoolInput,
@@ -269,9 +294,12 @@ const Rankings = () => {
       }
 
       setCustomProspects([...customProspects, newProspect]);
-      let storageArray = [...customProspects];
+      // let storageArray = [...customProspects];
+      let storageArray = performSortAsc(customProspects, 'id');
       storageArray.push(newProspect);
       localStorage.setItem('customProspects', JSON.stringify(storageArray));
+
+      setFilteredCustomProspects([...filteredCustomProspects, newProspect]);
 
       clearCustomInputValues();
     }
@@ -279,8 +307,10 @@ const Rankings = () => {
 
 
   const resetProspects = () => {
-    setCustomProspects([]);
     localStorage.removeItem('customProspects');
+    setCustomProspects([]);
+    setFilteredCustomProspects([]);
+    setCustomSearchResults([]);
     setModalIsOpen(false);
   }
 
@@ -297,26 +327,114 @@ const Rankings = () => {
     setCustomMyScoreInputEdit(customProspects[ind]['My Score'])
   }
 
+  const editCustomSearchProspectView = (ind) => {
+    console.log('IND: ', ind)
+    setCustomProspectToEdit(ind);
+    console.log(customProspectToEdit)
 
-  const saveCustomEdit = (ind) => {
-    const editedProspect = {
-      "Rank": customProspects[ind]['Rank'],
-      "Name": customNameInputEdit,
-      "School": customSchoolInputEdit,
-      "Position": customPositionInputEdit,
-      "Height": customHeightInputEdit,
-      "Weight": customWeightInputEdit,
-      "Draft Pulse Score": customDraftPulseScoreInputEdit,
-      "My Score": customMyScoreInputEdit,
+    setCustomNameInputEdit(customSearchResults[ind]['Name'])
+    setCustomSchoolInputEdit(customSearchResults[ind]['School'])
+    setCustomPositionInputEdit(customSearchResults[ind]['Position'])
+    setCustomHeightInputEdit(customSearchResults[ind]['Height'])
+    setCustomWeightInputEdit(customSearchResults[ind]['Weight'])
+    setCustomMyScoreInputEdit(customSearchResults[ind]['My Score'])
+  }
+
+  const editCustomProspectVieww = (id) => {
+    console.log('ID: ', id)
+    setCustomProspectToEdit(id);
+    // console.log(customProspectToEdit)
+
+    let prospectToTarget = filteredCustomProspects.filter(prospect => prospect['id'] === id)[0];
+    console.log('PT: ', prospectToTarget);
+
+    setCustomNameInputEdit(prospectToTarget['Name']);
+    setCustomSchoolInputEdit(prospectToTarget['School']);
+    setCustomPositionInputEdit(prospectToTarget['Position']);
+    setCustomHeightInputEdit(prospectToTarget['Height']);
+    setCustomWeightInputEdit(prospectToTarget['Weight']);
+    setCustomMyScoreInputEdit(prospectToTarget['My Score']);
+  }
+
+
+  // const saveCustomEdit = (ind) => {
+  const saveCustomEdit = (id) => {
+    console.log('HIT saveCustomEdit')
+    console.log('PROS ID: ', id)
+
+    let prospectToEdit = customProspects.filter(prospect => prospect['id'] === id);
+    if (prospectToEdit.length === 1) {
+      prospectToEdit = prospectToEdit[0];
+      console.log('P to E: ', prospectToEdit)
+
+      if (customNameInputEdit && customSchoolInputEdit && customPositionInputEdit && customWeightInputEdit && customMyScoreInputEdit) {
+        console.log('HIT IF ')
+        const editedProspect = {
+          "id": id,
+          "Rank": prospectToEdit['Rank'],
+          "Name": customNameInputEdit,
+          "School": customSchoolInputEdit,
+          "Position": customPositionInputEdit,
+          "Height": customHeightInputEdit,
+          "Weight": customWeightInputEdit,
+          "Draft Pulse Score": '',
+          "My Score": customMyScoreInputEdit,
+        }
+    
+        let prospectIndex;
+        let prospectFilteredIndex;
+        let prospectSearchedIndex;
+
+        for (let i = 0; i < customProspects.length; i++) {
+          if (customProspects[i]['id'] === id) {
+            prospectIndex = i;
+            break;
+          }
+        }
+
+        for (let i = 0; i < filteredCustomProspects.length; i++) {
+          if (filteredCustomProspects[i]['id'] === id) {
+            prospectFilteredIndex = i;
+            break;
+          }
+        }
+
+        for (let i = 0; i < customSearchResults.length; i++) {
+          if (customSearchResults[i]['id'] === id) {
+            prospectSearchedIndex = i;
+            break;
+          }
+        }
+
+        setCustomProspects(currentProspects => {
+          let updatedProspects = [...currentProspects];
+          updatedProspects[prospectFilteredIndex] = editedProspect;
+          updatedProspects = performSortAsc(updatedProspects, 'id');
+          localStorage.setItem('customProspects', JSON.stringify(updatedProspects));
+          return updatedProspects;
+        });
+
+  
+        setFilteredCustomProspects(currentProspects => {
+          const updatedProspects = [...currentProspects];
+          updatedProspects[prospectFilteredIndex] = editedProspect;
+          return updatedProspects;
+        });
+        
+        setCustomSearchResults(currentProspects => {
+          const updatedProspects = [...currentProspects];
+          updatedProspects[prospectSearchedIndex] = editedProspect;
+          return updatedProspects;
+        });
+        
+  
+        setCustomProspectToEdit(null);
+
+    } else {
+      console.log('SOMETHING WENT WRONG');
     }
 
-    setCustomProspects(currentProspects => {
-      const updatedProspects = [...currentProspects];
-      updatedProspects[ind] = editedProspect;
-      localStorage.setItem('customProspects', JSON.stringify(updatedProspects));
-      return updatedProspects;
-    });
-    setCustomProspectToEdit(null);
+    }
   }
   
   function openModal() {
@@ -367,15 +485,20 @@ const Rankings = () => {
                   <option value='pff'>PFF Rankings</option>
                   <option value='custom'>Custom Rankings</option>
                 </select>
-                {rankingsType === 'pff'
+                {/* {rankingsType === 'pff'
                 &&
                 <select id='view-amount' className='my-2' name='view-amount' onChange={(e) => viewAmountChange(parseInt(e.target.value))}>
                   <option value='50'>Top 50</option>
                   <option value='100'>Top 100</option>
                   <option value='150' selected>Top 150</option>
                 </select>
-                }
+                } */}
               </div>
+              {/* <div className='d-flex align-items-center'>
+                <p className='m-0 p-0'>Rankings: </p>
+                <button>PFF</button>
+                <button>Custom</button>
+              </div> */}
 
               {rankingsType === 'custom' &&
                 <div>
@@ -386,7 +509,12 @@ const Rankings = () => {
             </div>
 
             <ul id='rankings-table-position-select'>
-              <input value={searchVal} id='rankings-player-search' type='text' placeholder='Search' onChange={e => searchForProspect(e.target.value)}/>
+
+              {rankingsType === 'pff' ?
+                <input value={searchVal} id='rankings-player-search' type='text' placeholder='Search' onChange={e => searchForProspect(e.target.value)}/>
+              :
+                <input value={customSearchVal} id='custom-rankings-player-search' type='text' placeholder='Search' onChange={e => searchForCustomProspect(e.target.value)}/>
+              }
               
               <li className={`text-light rt-position-option ${positionView === 'OVR' ? 'pos-active' : ''}`} onClick={() => filterPositionView('OVR')}>OVR</li>
               <li className={`text-light rt-position-option ${positionView === 'QB' ? 'pos-active' : ''}`} onClick={() => filterPositionView('QB')}>QB</li>
@@ -406,7 +534,7 @@ const Rankings = () => {
                   {/* <th scope='col'></th> */}
                   {/* <th scope='col'><span className='rankings-table-header' onClick={() => sortRankings('PFF Rank')}>{rankingsType === 'pff' && `PFF RK`} {sortBy === 'PFF Rank' && <i class={sortArrowClass}/>}</span></th> */}
                   {/* {rankingsType === 'custom' && <th scope='col'><span className='rankings-table-header'></span></th>} */}
-                  {rankingsType === 'custom' && <th scope='col'><span className='rankings-table-header' onClick={() => sortRankings('PFF Rank')}>RK {(sortBy === 'Rank' && rankingsType === 'rank') && <i class={sortArrowClass}/>}</span></th>}
+                  {rankingsType === 'custom' && <th scope='col'><span className='rankings-table-header' onClick={() => sortRankings('Rank')}>RK {(sortBy === 'Rank' && rankingsType === 'custom') && <i class={sortArrowClass}/>}</span></th>}
                   {rankingsType === 'pff' && <th scope='col'><span className='rankings-table-header' onClick={() => sortRankings('PFF Rank')}>PFF RK {(sortBy === 'PFF Rank' && rankingsType === 'pff') && <i class={sortArrowClass}/>}</span></th>}
                   {/* <th scope='col'><span className='rankings-table-header' onClick={() => sortRankings('PFF Rank')}>{rankingsType === 'pff' && `PFF RK`} {(sortBy === 'PFF Rank' && rankingsType === 'pff') && <i class={sortArrowClass}/>}</span></th> */}
                   <th scope='col'><span className='rankings-table-header' onClick={() => sortRankings('Name')}>Name {sortBy === 'Name' && <i class={sortArrowClass}/>}</span></th>
@@ -456,111 +584,230 @@ const Rankings = () => {
               </tbody>
               :
               <tbody className='pff-rankings-table'>
-                {customProspects && customProspects.map((prospect, index) => {
-                  if (customProspectToEdit === index) {
-                    return (
-                    <tr>
-                      <td className='custom-rankings-table-data text-center'>
-                        <button
-                          className='draft-btn draft-btn-hover me-1'
-                          onClick={() => saveCustomEdit(index)}
-                          style={{marginTop: '30px', marginBottom: '30px'}}
-                        >
-                        Save
-                        </button>
-                        <button
-                          // className='draft-btn draft-btn-hover ms-1'
-                          className='dark-btn ms-1'
-                          onClick={() => setCustomProspectToEdit(null)}
-                          // style={{opacity: 0.65}}
-                        >
-                        Cancel
-                        </button>
-                        <i className='fa-solid fa-rotate'/>
-                      </td>
-                      {/* <td className='custom-rankings-table-data' style={{display: 'flex', alignItems: 'center', height: '100px'}}> */}
-                      <td className='custom-rankings-table-data'>
-                        <input type='text' maxLength='50' className='my-30px' value={customNameInputEdit} onChange={e => setCustomNameInputEdit(e.target.value)}/>
-                      </td>
-                      <td className='custom-rankings-table-data'>
-                        <select name='school' id='' className='my-30px' value={customSchoolInputEdit} onChange={e => setCustomSchoolInputEdit(e.target.value)}>
-                          <option value=''>--</option>
-                          {logos && Object.keys(logos).map(team => (
-                            <option key={team} value={team}>{team}</option>
-                          ))}
-                        </select>
-                      </td>
-                      <td className='custom-rankings-table-data text-center'>
-                          <select name='position' id='' className='my-30px' value={customPositionInputEdit} onChange={e => setCustomPositionInputEdit(e.target.value)}>
-                            <option value='QB'>QB</option>
-                            <option value='RB'>RB</option>
-                            <option value='WR'>WR</option>
-                            <option value='TE'>TE</option>
-                            <option value='OT'>OT</option>
-                            <option value='IOL'>IOL</option>
-                            <option value='EDGE'>EDGE</option>
-                            <option value='IDL'>IDL</option>
-                            <option value='LB'>LB</option>
-                            <option value='DB'>DB</option>
-                          </select>
-                      </td>
-                      <td className='custom-rankings-table-data text-center'>
-                          <select name='height' id='' className='my-30px' value={customHeightInputEdit} onChange={e => setCustomHeightInputEdit(e.target.value)}>
-                            <option value="5'5">5'5"</option>
-                            <option value="5'6">5'6"</option>
-                            <option value="5'7">5'7"</option>
-                            <option value="5'8">5'8"</option>
-                            <option value="5'9">5'9"</option>
-                            <option value="5'10">5'10"</option>
-                            <option value="5'11">5'11"</option>
-                            <option value="6'0">6'0"</option>
-                            <option value="6'1">6'1"</option>
-                            <option value="6'2">6'2"</option>
-                            <option value="6'3">6'3"</option>
-                            <option value="6'4">6'4"</option>
-                            <option value="6'5">6'5"</option>
-                            <option value="6'6">6'6"</option>
-                            <option value="6'7">6'7"</option>
-                            <option value="6'8">6'8"</option>
-                            <option value="6'9">6'9"</option>
-                            <option value="6'10">6'10"</option>
-                          </select>
-                      </td>
-                      <td className='custom-rankings-table-data text-center'>
-                        <input type='number' name='weight' id='' className='my-30px' onChange={(e) => setCustomWeightInputEdit(e.target.value)} value={customWeightInputEdit}/> lbs
-                      </td>
-                      <td className='custom-rankings-table-data'>
-                        {/* <input type='number' name='dp-score' id='' onChange={e => setCustomDraftPulseScoreInput(e.target.value)} value={customDraftPulseScoreInput}/> */}
-                      </td>
-                      <td className='custom-rankings-table-data text-center'>
-                        <input type='number' name='my-score' id='' className='my-30px' min='1' max='100' onChange={e => setCustomMyScoreInputEdit(e.target.value)} value={customMyScoreInputEdit}/>
-                      </td>
-                    </tr>                      
-                    )
-                  } else {
-                    return (
-                      <tr key={index}>
-                        <td className='rankings-table-data text-center'>{prospect['Rank']}</td>
-                        <td className='rankings-table-data'>
-                          <div className='d-flex justify-content-between'>
-                            <div>
-                              <img src={logos && logos[prospect.School]} alt={prospect.School} className='rankings-logo'/>
-                              &nbsp;&nbsp;{prospect.Name}
+                {/* {filteredCustomProspects && filteredCustomProspects.map((prospect, index) => { */}
+                {customSearchVal !== '' ? (
+                  customSearchResults.map((prospect, index) => {
+                    if (customProspectToEdit === index) {
+                      return (
+                        <tr>
+                          <td className='custom-rankings-table-data text-center'>
+                            <button
+                              className='draft-btn draft-btn-hover me-1'
+                              onClick={() => saveCustomEdit(prospect['id'])}
+                              style={{marginTop: '30px', marginBottom: '30px'}}
+                            >
+                            Save
+                            </button>
+                            <button
+                              // className='draft-btn draft-btn-hover ms-1'
+                              className='dark-btn ms-1'
+                              onClick={() => setCustomProspectToEdit(null)}
+                            >
+                            Cancel
+                            </button>
+                            <i className='fa-solid fa-rotate'/>
+                          </td>
+                          <td className='custom-rankings-table-data'>
+                            <input type='text' maxLength='50' className='my-30px' value={customNameInputEdit} onChange={e => setCustomNameInputEdit(e.target.value)}/>
+                          </td>
+                          <td className='custom-rankings-table-data'>
+                            <select name='school' id='' className='my-30px' value={customSchoolInputEdit} onChange={e => setCustomSchoolInputEdit(e.target.value)}>
+                              {logos && Object.keys(logos).map(team => (
+                                <option key={team} value={team}>{team}</option>
+                              ))}
+                            </select>
+                          </td>
+                          <td className='custom-rankings-table-data text-center'>
+                              <select name='position' id='' className='my-30px' value={customPositionInputEdit} onChange={e => setCustomPositionInputEdit(e.target.value)}>
+                                <option value='QB'>QB</option>
+                                <option value='RB'>RB</option>
+                                <option value='WR'>WR</option>
+                                <option value='TE'>TE</option>
+                                <option value='OT'>OT</option>
+                                <option value='IOL'>IOL</option>
+                                <option value='EDGE'>EDGE</option>
+                                <option value='IDL'>IDL</option>
+                                <option value='LB'>LB</option>
+                                <option value='DB'>DB</option>
+                              </select>
+                          </td>
+                          <td className='custom-rankings-table-data text-center'>
+                              <select name='height' id='' className='my-30px' value={customHeightInputEdit} onChange={e => setCustomHeightInputEdit(e.target.value)}>
+                                <option value="5'5">5'5"</option>
+                                <option value="5'6">5'6"</option>
+                                <option value="5'7">5'7"</option>
+                                <option value="5'8">5'8"</option>
+                                <option value="5'9">5'9"</option>
+                                <option value="5'10">5'10"</option>
+                                <option value="5'11">5'11"</option>
+                                <option value="6'0">6'0"</option>
+                                <option value="6'1">6'1"</option>
+                                <option value="6'2">6'2"</option>
+                                <option value="6'3">6'3"</option>
+                                <option value="6'4">6'4"</option>
+                                <option value="6'5">6'5"</option>
+                                <option value="6'6">6'6"</option>
+                                <option value="6'7">6'7"</option>
+                                <option value="6'8">6'8"</option>
+                                <option value="6'9">6'9"</option>
+                                <option value="6'10">6'10"</option>
+                              </select>
+                          </td>
+                          <td className='custom-rankings-table-data text-center'>
+                            <input type='number' name='weight' id='' className='my-30px' onChange={(e) => setCustomWeightInputEdit(e.target.value)} value={customWeightInputEdit}/> lbs
+                          </td>
+                          <td className='custom-rankings-table-data'>
+                            {/* <input type='number' name='dp-score' id='' onChange={e => setCustomDraftPulseScoreInput(e.target.value)} value={customDraftPulseScoreInput}/> */}
+                          </td>
+                          <td className='custom-rankings-table-data text-center'>
+                            <input type='number' name='my-score' id='' className='my-30px' min='1' max='100' onChange={e => setCustomMyScoreInputEdit(e.target.value)} value={customMyScoreInputEdit}/>
+                          </td>
+                        </tr>
+                      )
+                    } else {
+                      return (
+                        <tr key={index}>
+                          <td className='rankings-table-data text-center'>{prospect['Rank']}</td>
+                          <td className='rankings-table-data'>
+                            <div className='d-flex justify-content-between'>
+                              <div>
+                                <img src={logos && logos[prospect.School]} alt={prospect.School} className='rankings-logo'/>
+                                &nbsp;&nbsp;{prospect.Name}
+                              </div>
+                              <p className='fs-12 text-gray-color cursor-pointer hover-underline my-0 me-2' onClick={() => editCustomSearchProspectView(index)}>Edit</p>
                             </div>
-                            <p className='fs-12 text-gray-color cursor-pointer hover-underline my-0 me-2' onClick={() => editCustomProspectView(index)}>Edit</p>
-                          </div>
+                          </td>
+                          <td className='rankings-table-data'>{prospect.School}</td>
+                          <td className='rankings-table-data text-center'>{prospect.Position}</td>
+                          <td className='rankings-table-data text-center'>{prospect.Height}"</td>
+                          <td className='rankings-table-data text-center'>{prospect.Weight}</td>
+                          <td className='rankings-table-data text-center'>{prospect['Draft Pulse Score']}</td>
+                          <td className='rankings-table-data text-center'>{prospect['My Score']}</td>
+                        </tr>
+                      )
+                    }
+                    // <tr key={index}>
+                    //   <td className='custom-rankings-table-data text-center'>{prospect['Rank']}</td>
+                    //   <td className='custom-rankings-table-data'>
+                    //     <img src={logos && logos[prospect.School]} alt={prospect.School} className='rankings-logo'/>
+                    //     &nbsp;&nbsp;{prospect.Name}
+                    //   </td>
+                    //   <td className='custom-rankings-table-data'>{prospect.School}</td>
+                    //   <td className='custom-rankings-table-data text-center'>{prospect.Position}</td>
+                    //   <td className='custom-rankings-table-data text-center'>{prospect.Height}"</td>
+                    //   <td className='custom-rankings-table-data text-center'>{prospect.Weight}</td>
+                    //   <td className='custom-rankings-table-data'>{prospect['Draft Pulse Score']}</td>
+                    //   <td className='custom-rankings-table-data'>{prospect['My Score']}</td>
+                    // </tr>
+                  })
+                ) : (
+                  filteredCustomProspects.map((prospect, index) => {
+                    // if (customProspectToEdit === index) {
+                    if (customProspectToEdit === prospect['id']) {
+                      return (
+                      <tr>
+                        <td className='custom-rankings-table-data text-center'>
+                          <button
+                            className='draft-btn draft-btn-hover me-1'
+                            onClick={() => saveCustomEdit(prospect['id'])}
+                            style={{marginTop: '30px', marginBottom: '30px'}}
+                          >
+                          Save
+                          </button>
+                          <button
+                            // className='draft-btn draft-btn-hover ms-1'
+                            className='dark-btn ms-1'
+                            onClick={() => setCustomProspectToEdit(null)}
+                            // style={{opacity: 0.65}}
+                          >
+                          Cancel
+                          </button>
+                          <i className='fa-solid fa-rotate'/>
                         </td>
-                        <td className='rankings-table-data'>{prospect.School}</td>
-                        <td className='rankings-table-data text-center'>{prospect.Position}</td>
-                        <td className='rankings-table-data text-center'>{prospect.Height}"</td>
-                        <td className='rankings-table-data text-center'>{prospect.Weight}</td>
-                        <td className='rankings-table-data text-center'>{prospect['Draft Pulse Score']}</td>
-                        <td className='rankings-table-data text-center'>{prospect['My Score']}</td>
-                        {/* <td className='rankings-table-data text-center'>Edit</td> */}
+                        {/* <td className='custom-rankings-table-data' style={{display: 'flex', alignItems: 'center', height: '100px'}}> */}
+                        <td className='custom-rankings-table-data'>
+                          <input type='text' maxLength='50' className='my-30px' value={customNameInputEdit} onChange={e => setCustomNameInputEdit(e.target.value)}/>
+                        </td>
+                        <td className='custom-rankings-table-data'>
+                          <select name='school' id='' className='my-30px' value={customSchoolInputEdit} onChange={e => setCustomSchoolInputEdit(e.target.value)}>
+                            {logos && Object.keys(logos).map(team => (
+                              <option key={team} value={team}>{team}</option>
+                            ))}
+                          </select>
+                        </td>
+                        <td className='custom-rankings-table-data text-center'>
+                            <select name='position' id='' className='my-30px' value={customPositionInputEdit} onChange={e => setCustomPositionInputEdit(e.target.value)}>
+                              <option value='QB'>QB</option>
+                              <option value='RB'>RB</option>
+                              <option value='WR'>WR</option>
+                              <option value='TE'>TE</option>
+                              <option value='OT'>OT</option>
+                              <option value='IOL'>IOL</option>
+                              <option value='EDGE'>EDGE</option>
+                              <option value='IDL'>IDL</option>
+                              <option value='LB'>LB</option>
+                              <option value='DB'>DB</option>
+                            </select>
+                        </td>
+                        <td className='custom-rankings-table-data text-center'>
+                            <select name='height' id='' className='my-30px' value={customHeightInputEdit} onChange={e => setCustomHeightInputEdit(e.target.value)}>
+                              <option value="5'5">5'5"</option>
+                              <option value="5'6">5'6"</option>
+                              <option value="5'7">5'7"</option>
+                              <option value="5'8">5'8"</option>
+                              <option value="5'9">5'9"</option>
+                              <option value="5'10">5'10"</option>
+                              <option value="5'11">5'11"</option>
+                              <option value="6'0">6'0"</option>
+                              <option value="6'1">6'1"</option>
+                              <option value="6'2">6'2"</option>
+                              <option value="6'3">6'3"</option>
+                              <option value="6'4">6'4"</option>
+                              <option value="6'5">6'5"</option>
+                              <option value="6'6">6'6"</option>
+                              <option value="6'7">6'7"</option>
+                              <option value="6'8">6'8"</option>
+                              <option value="6'9">6'9"</option>
+                              <option value="6'10">6'10"</option>
+                            </select>
+                        </td>
+                        <td className='custom-rankings-table-data text-center'>
+                          <input type='number' name='weight' id='' className='my-30px' onChange={(e) => setCustomWeightInputEdit(e.target.value)} value={customWeightInputEdit}/> lbs
+                        </td>
+                        <td className='custom-rankings-table-data'>
+                          {/* <input type='number' name='dp-score' id='' onChange={e => setCustomDraftPulseScoreInput(e.target.value)} value={customDraftPulseScoreInput}/> */}
+                        </td>
+                        <td className='custom-rankings-table-data text-center'>
+                          <input type='number' name='my-score' id='' className='my-30px' min='1' max='100' onChange={e => setCustomMyScoreInputEdit(e.target.value)} value={customMyScoreInputEdit}/>
+                        </td>
                       </tr>
-                    )
-                  }
-                })}
+                      )
+                    } else {
+                      return (
+                        <tr key={index}>
+                          <td className='rankings-table-data text-center'>{prospect['Rank']}</td>
+                          <td className='rankings-table-data'>
+                            <div className='d-flex justify-content-between'>
+                              <div>
+                                <img src={logos && logos[prospect.School]} alt={prospect.School} className='rankings-logo'/>
+                                &nbsp;&nbsp;{prospect.Name}
+                              </div>
+                              {/* <p className='fs-12 text-gray-color cursor-pointer hover-underline my-0 me-2' onClick={() => editCustomProspectView(index)}>Edit</p> */}
+                              <p className='fs-12 text-gray-color cursor-pointer hover-underline my-0 me-2' onClick={() => editCustomProspectVieww(prospect['id'])}>Edit</p>
+                            </div>
+                          </td>
+                          <td className='rankings-table-data'>{prospect.School}</td>
+                          <td className='rankings-table-data text-center'>{prospect.Position}</td>
+                          <td className='rankings-table-data text-center'>{prospect.Height}"</td>
+                          <td className='rankings-table-data text-center'>{prospect.Weight}</td>
+                          <td className='rankings-table-data text-center'>{prospect['Draft Pulse Score']}</td>
+                          <td className='rankings-table-data text-center'>{prospect['My Score']}</td>
+                          {/* <td className='rankings-table-data text-center'>Edit</td> */}
+                        </tr>
+                      )
+                    }
+                  })
+                )}
                 <tr>
                   <td className='custom-rankings-table-data text-center'>
                     <button

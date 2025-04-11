@@ -267,6 +267,7 @@ body {
 }
 
 #rankings-player-search,
+#custom-rankings-player-search,
 #draft-player-search {
   background-color: #333;
   color: rgb(248, 249, 250);
